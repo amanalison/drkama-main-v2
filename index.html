@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="ms">
 <head>
-
 <meta charset="utf-8">
 
 <meta
@@ -13,17 +12,126 @@
 
 <meta
   name="description"
-  content="Pengenalan Dr. Kama Shaffeei dan KAMA-AI — pembantu akademik digital untuk pendidikan, penyelidikan, instrumen, tesis dan viva."
+  content="Pengenalan Dr. Kama Shaffeei dan KAMA-AI, pembantu akademik digital untuk pendidikan, penyelidikan, instrumen, tesis dan viva."
 >
+
+<meta name="theme-color" content="#062d58">
+<meta name="application-name" content="KAMA-AI">
+
+<meta
+  name="apple-mobile-web-app-capable"
+  content="yes"
+>
+
+<meta
+  name="apple-mobile-web-app-status-bar-style"
+  content="default"
+>
+
+<meta
+  name="apple-mobile-web-app-title"
+  content="KAMA-AI"
+>
+
+<link
+  rel="manifest"
+  href="/manifest.webmanifest"
+>
+
+<!-- ROBOT KAMA-AI SEBAGAI ICON -->
+
+<link
+  rel="icon"
+  type="image/png"
+  href="https://drkama-ai-v6.netlify.app/assets/imej%20kama-ai-robot.png"
+>
+
+<link
+  rel="apple-touch-icon"
+  href="https://drkama-ai-v6.netlify.app/assets/imej%20kama-ai-robot.png"
+>
+
+
+<!-- ======================================================
+     WHATSAPP / SOCIAL PREVIEW
+     ====================================================== -->
+
+<meta
+  property="og:type"
+  content="website"
+>
+
+<meta
+  property="og:site_name"
+  content="Dr. Kama Shaffeei | KAMA-AI"
+>
+
+<meta
+  property="og:title"
+  content="Dr. Kama Shaffeei | KAMA-AI"
+>
+
+<meta
+  property="og:description"
+  content="Pengenalan Dr. Kama Shaffeei dan KAMA-AI, pembantu akademik digital untuk pendidikan, penyelidikan, instrumen, tesis dan viva."
+>
+
+<meta
+  property="og:url"
+  content="https://drkamaupsi.netlify.app/"
+>
+
+<meta
+  property="og:image"
+  content="https://drkama-ai-v6.netlify.app/assets/dr%20kama%20sebenar.jpg"
+>
+
+<meta
+  property="og:image:secure_url"
+  content="https://drkama-ai-v6.netlify.app/assets/dr%20kama%20sebenar.jpg"
+>
+
+<meta
+  property="og:image:type"
+  content="image/jpeg"
+>
+
+<meta
+  property="og:image:alt"
+  content="Dr. Kama Shaffeei dan KAMA-AI"
+>
+
+
+<!-- SOCIAL LARGE CARD -->
+
+<meta
+  name="twitter:card"
+  content="summary_large_image"
+>
+
+<meta
+  name="twitter:title"
+  content="Dr. Kama Shaffeei | KAMA-AI"
+>
+
+<meta
+  name="twitter:description"
+  content="Pembantu akademik digital untuk pendidikan, penyelidikan, instrumen, tesis dan viva."
+>
+
+<meta
+  name="twitter:image"
+  content="https://drkama-ai-v6.netlify.app/assets/dr%20kama%20sebenar.jpg"
+>
+
 
 <style>
 
 /* =========================================================
-   DESIGN SYSTEM
+   THEME
    ========================================================= */
 
 :root{
-
   --navy:#062d58;
   --navy-dark:#041f3e;
   --navy-mid:#0b467c;
@@ -33,13 +141,9 @@
   --gold-soft:#f7ebcc;
 
   --cream:#f4eee3;
-  --cream-soft:#faf6ee;
   --paper:#fcfaf6;
 
   --white:#ffffff;
-
-  --green:#087457;
-  --green-soft:#eaf6f1;
 
   --text:#18242c;
   --muted:#68757c;
@@ -48,11 +152,7 @@
   --shadow:
     0 18px 48px rgba(12,32,48,.11);
 
-  --shadow-soft:
-    0 8px 24px rgba(12,32,48,.07);
-
   --max:1180px;
-
 }
 
 
@@ -72,7 +172,6 @@ body{
   margin:0;
 
   color:var(--text);
-
   background:var(--paper);
 
   font-family:
@@ -104,14 +203,12 @@ button{
 }
 
 .container{
-
   width:min(
     calc(100% - 40px),
     var(--max)
   );
 
   margin:auto;
-
 }
 
 
@@ -120,7 +217,6 @@ button{
    ========================================================= */
 
 .header{
-
   position:sticky;
 
   top:0;
@@ -135,37 +231,28 @@ button{
 
   backdrop-filter:
     blur(16px);
-
 }
 
-
 .nav{
-
   min-height:76px;
 
   display:flex;
   align-items:center;
   justify-content:space-between;
 
-  gap:25px;
-
+  gap:24px;
 }
 
-
 .brand{
-
   min-width:0;
 
   display:flex;
   align-items:center;
 
   gap:11px;
-
 }
 
-
 .brand-mark{
-
   width:46px;
   height:46px;
 
@@ -180,42 +267,31 @@ button{
   border-radius:11px;
 
   color:var(--gold);
-
   background:var(--navy);
 
   font-family:
     Georgia,
-    "Times New Roman",
     serif;
 
-  font-size:.95rem;
   font-weight:700;
-
 }
-
 
 .brand-copy strong,
 .brand-copy small{
   display:block;
 }
 
-
 .brand-copy strong{
-
   color:var(--navy);
 
   font-family:
     Georgia,
-    "Times New Roman",
     serif;
 
   font-size:.92rem;
-
 }
 
-
 .brand-copy small{
-
   margin-top:3px;
 
   color:#758087;
@@ -223,37 +299,23 @@ button{
   font-size:.48rem;
 
   letter-spacing:.08em;
-
 }
 
-
 .nav-links{
-
   display:flex;
   align-items:center;
 
   gap:21px;
-
 }
 
-
 .nav-links a{
-
   color:#3c4a52;
 
   font-size:.64rem;
   font-weight:800;
-
 }
-
-
-.nav-links a:hover{
-  color:var(--navy);
-}
-
 
 .kama-nav{
-
   padding:
     11px 15px !important;
 
@@ -271,12 +333,9 @@ button{
   box-shadow:
     0 7px 18px
     rgba(181,134,31,.20);
-
 }
 
-
 .menu-button{
-
   display:none;
 
   width:42px;
@@ -294,27 +353,17 @@ button{
   cursor:pointer;
 
   font-size:1.1rem;
-
 }
 
 
 /* =========================================================
-   HERO — PREMIUM EDITORIAL
+   HERO
    ========================================================= */
 
 .hero{
-
   position:relative;
 
   overflow:hidden;
-
-  min-height:
-    calc(
-      100vh - 76px
-    );
-
-  display:flex;
-  align-items:center;
 
   background:
     radial-gradient(
@@ -331,21 +380,15 @@ button{
       125deg,
       #f5efe4 0%,
       #fcfaf6 52%,
-      #ffffff 100%
+      #fff 100%
     );
-
 }
 
-
 .hero::before{
-
   content:"";
 
   position:absolute;
-
   inset:0;
-
-  pointer-events:none;
 
   background-image:
     radial-gradient(
@@ -357,62 +400,46 @@ button{
   background-size:
     32px 32px;
 
+  pointer-events:none;
 }
 
-
 .hero-inner{
-
-  width:100%;
-
   min-height:
-    calc(
-      100vh - 76px
-    );
+    calc(100vh - 76px);
 
   position:relative;
-
   z-index:2;
 
   display:grid;
 
   grid-template-columns:
-    minmax(360px,.90fr)
-    minmax(0,1.10fr);
+    minmax(360px,.9fr)
+    minmax(0,1.1fr);
 
   align-items:center;
 
-  gap:
-    clamp(
-      45px,
-      6vw,
-      90px
-    );
+  gap:70px;
 
   padding:
     58px 0 70px;
-
 }
 
 
 /* =========================================================
-   HERO PORTRAIT
+   PORTRAIT PREMIUM
    ========================================================= */
 
-.hero-portrait-column{
+.hero-portrait{
+  min-height:630px;
 
   position:relative;
-
-  min-height:630px;
 
   display:flex;
   align-items:center;
   justify-content:center;
-
 }
 
-
 .portrait-halo{
-
   width:520px;
   height:520px;
 
@@ -427,39 +454,12 @@ button{
     translateX(-50%);
 
   border:
-    1px solid
-    rgba(213,168,55,.32);
+    1px solid rgba(213,168,55,.32);
 
   border-radius:50%;
-
 }
-
-
-.portrait-halo::before{
-
-  content:"";
-
-  width:14px;
-  height:14px;
-
-  position:absolute;
-
-  right:42px;
-  top:45px;
-
-  border-radius:50%;
-
-  background:var(--gold);
-
-  box-shadow:
-    0 0 0 8px
-    rgba(213,168,55,.10);
-
-}
-
 
 .portrait-halo::after{
-
   content:"";
 
   width:390px;
@@ -471,8 +471,7 @@ button{
   bottom:-25px;
 
   border-radius:
-    50% 50%
-    20px 20px;
+    50% 50% 20px 20px;
 
   background:
     linear-gradient(
@@ -484,72 +483,41 @@ button{
   box-shadow:
     0 25px 60px
     rgba(4,31,62,.15);
-
 }
 
-
-/*
-  JPG Dr. Kama sengaja dicrop di dalam frame
-  editorial supaya background putih asal
-  tidak nampak seperti gambar ditampal.
-*/
-
 .portrait-frame{
-
-  width:
-    min(
-      440px,
-      92%
-    );
-
+  width:min(440px,92%);
   height:560px;
 
   position:relative;
-
   z-index:3;
 
   overflow:hidden;
 
   border:
-    1px solid
-    rgba(6,45,88,.12);
+    1px solid rgba(6,45,88,.12);
 
   border-radius:
-    210px 210px
-    24px 24px;
+    210px 210px 24px 24px;
 
   background:#fff;
 
   box-shadow:
     0 28px 60px
     rgba(14,34,50,.13);
-
 }
 
-
 .portrait-frame img{
-
   width:100%;
   height:100%;
 
-  display:block;
-
   object-fit:cover;
-
   object-position:center 12%;
 
-  transform:
-    scale(1.04);
-
-  filter:
-    contrast(1.02)
-    saturate(.96);
-
+  transform:scale(1.04);
 }
 
-
 .portrait-frame::after{
-
   content:"";
 
   position:absolute;
@@ -558,9 +526,7 @@ button{
   right:0;
   bottom:0;
 
-  height:115px;
-
-  pointer-events:none;
+  height:110px;
 
   background:
     linear-gradient(
@@ -568,12 +534,9 @@ button{
       rgba(4,31,62,.16),
       transparent
     );
-
 }
 
-
 .portrait-label{
-
   position:absolute;
 
   z-index:5;
@@ -581,14 +544,11 @@ button{
   left:8px;
   bottom:58px;
 
-  min-width:190px;
-
   padding:
     13px 17px;
 
   border:
-    1px solid
-    rgba(213,168,55,.55);
+    1px solid rgba(213,168,55,.55);
 
   border-radius:12px;
 
@@ -600,39 +560,27 @@ button{
   box-shadow:
     0 14px 30px
     rgba(4,31,62,.20);
-
-  backdrop-filter:
-    blur(10px);
-
 }
-
 
 .portrait-label strong,
 .portrait-label span{
   display:block;
 }
 
-
 .portrait-label strong{
-
   font-family:
     Georgia,
-    "Times New Roman",
     serif;
 
   font-size:.83rem;
-
 }
 
-
 .portrait-label span{
-
   margin-top:4px;
 
   color:#d9e4ed;
 
   font-size:.48rem;
-
 }
 
 
@@ -641,18 +589,12 @@ button{
    ========================================================= */
 
 .hero-copy{
-
   position:relative;
 
   z-index:4;
-
-  padding-right:12px;
-
 }
 
-
-.hero-eyebrow{
-
+.eyebrow{
   display:flex;
   align-items:center;
 
@@ -666,28 +608,18 @@ button{
   font-weight:900;
 
   letter-spacing:.15em;
-
 }
 
-
-.hero-eyebrow::before{
-
+.eyebrow::before{
   content:"";
 
   width:34px;
   height:2px;
 
-  flex-shrink:0;
-
   background:var(--gold);
-
 }
 
-
 .hero h1{
-
-  max-width:760px;
-
   margin:
     0 0 8px;
 
@@ -705,17 +637,14 @@ button{
       7.4rem
     );
 
-  font-weight:500;
-
   line-height:.86;
 
-  letter-spacing:-.055em;
+  font-weight:500;
 
+  letter-spacing:-.055em;
 }
 
-
 .hero h1 span{
-
   display:block;
 
   margin-top:8px;
@@ -725,14 +654,9 @@ button{
   font-size:.52em;
 
   line-height:.96;
-
-  letter-spacing:-.025em;
-
 }
 
-
 .hero-role{
-
   margin:
     18px 0;
 
@@ -740,14 +664,9 @@ button{
 
   font-size:.72rem;
   font-weight:900;
-
-  letter-spacing:.035em;
-
 }
 
-
 .hero-description{
-
   max-width:650px;
 
   margin:0;
@@ -756,16 +675,9 @@ button{
 
   font-size:.88rem;
   line-height:1.78;
-
 }
 
-
-/* =========================================================
-   HERO TAGS
-   ========================================================= */
-
 .hero-tags{
-
   display:flex;
   flex-wrap:wrap;
 
@@ -773,12 +685,9 @@ button{
 
   margin:
     22px 0 27px;
-
 }
 
-
 .hero-tags span{
-
   padding:
     7px 10px;
 
@@ -794,26 +703,17 @@ button{
 
   font-size:.56rem;
   font-weight:750;
-
 }
 
-
-/* =========================================================
-   HERO BUTTONS
-   ========================================================= */
-
 .hero-actions{
-
   display:flex;
   flex-wrap:wrap;
 
   gap:10px;
-
 }
 
-
-.hero-primary{
-
+.primary-button,
+.secondary-button{
   min-height:52px;
 
   display:inline-flex;
@@ -827,6 +727,11 @@ button{
 
   border-radius:12px;
 
+  font-size:.68rem;
+  font-weight:900;
+}
+
+.primary-button{
   color:var(--navy-dark);
 
   background:
@@ -839,64 +744,21 @@ button{
   box-shadow:
     0 11px 24px
     rgba(181,134,31,.22);
-
-  font-size:.68rem;
-  font-weight:900;
-
-  transition:
-    transform .16s ease,
-    box-shadow .16s ease;
-
 }
 
-
-.hero-primary:hover{
-
-  transform:
-    translateY(-2px);
-
-  box-shadow:
-    0 14px 27px
-    rgba(181,134,31,.27);
-
-}
-
-
-.hero-secondary{
-
-  min-height:52px;
-
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-
-  padding:
-    13px 20px;
+.secondary-button{
+  color:var(--navy);
 
   border:
     1px solid #cad4d9;
 
-  border-radius:12px;
-
-  color:var(--navy);
-
   background:#fff;
-
-  font-size:.68rem;
-  font-weight:850;
-
 }
 
-
-/* =========================================================
-   HERO QUOTE
-   ========================================================= */
-
 .hero-quote{
-
   max-width:520px;
 
-  margin-top:29px;
+  margin-top:28px;
 
   padding:
     16px 18px;
@@ -907,33 +769,20 @@ button{
   color:#6c5522;
 
   background:
-    linear-gradient(
-      90deg,
-      rgba(247,235,204,.60),
-      rgba(247,235,204,.18)
-    );
+    rgba(247,235,204,.45);
 
   font-family:
     Georgia,
-    "Times New Roman",
     serif;
 
   font-size:.88rem;
   font-style:italic;
-
-  line-height:1.55;
-
 }
 
 
-/* =========================================================
-   HERO KAMA-AI MINI PROMO
-   ========================================================= */
+/* KAMA MINI */
 
-.hero-kama-note{
-
-  max-width:650px;
-
+.kama-mini{
   margin-top:18px;
 
   display:flex;
@@ -945,44 +794,32 @@ button{
 
   font-size:.56rem;
   line-height:1.5;
-
 }
 
-
-.hero-kama-note img{
-
-  width:40px;
-  height:40px;
-
-  flex-shrink:0;
+.kama-mini img{
+  width:43px;
+  height:43px;
 
   object-fit:contain;
-
 }
 
-
-.hero-kama-note strong{
+.kama-mini strong{
   color:var(--navy);
 }
 
 
 /* =========================================================
-   ACADEMIC SHORTCUTS
+   SHORTCUTS
    ========================================================= */
 
 .shortcuts{
-
   position:relative;
-
   z-index:5;
 
-  margin-top:-32px;
-
+  margin-top:-30px;
 }
 
-
 .shortcut-grid{
-
   display:grid;
 
   grid-template-columns:
@@ -1000,12 +837,9 @@ button{
   background:#fff;
 
   box-shadow:var(--shadow);
-
 }
 
-
 .shortcut{
-
   min-height:105px;
 
   display:flex;
@@ -1015,32 +849,18 @@ button{
 
   gap:8px;
 
-  padding:
-    13px 7px;
+  padding:13px 7px;
 
   border-radius:12px;
 
   text-align:center;
-
-  transition:
-    background .16s ease,
-    transform .16s ease;
-
 }
-
 
 .shortcut:hover{
-
-  transform:
-    translateY(-2px);
-
   background:#fbf6ea;
-
 }
 
-
 .shortcut-icon{
-
   width:35px;
   height:35px;
 
@@ -1057,25 +877,18 @@ button{
   background:var(--gold-soft);
 
   font-weight:900;
-
 }
 
-
 .shortcut strong{
-
   color:var(--navy);
 
   font-size:.61rem;
-
 }
 
-
 .shortcut small{
-
   color:#7d878b;
 
   font-size:.45rem;
-
 }
 
 
@@ -1084,27 +897,20 @@ button{
    ========================================================= */
 
 .section{
-
   padding:
-    95px 0;
-
+    90px 0;
 }
 
-
 .section-cream{
-
   background:
     linear-gradient(
       180deg,
       var(--cream),
       #faf7f1
     );
-
 }
 
-
 .section-navy{
-
   color:#fff;
 
   background:
@@ -1113,43 +919,31 @@ button{
       var(--navy-dark),
       var(--navy-mid)
     );
-
 }
-
-
-.section-heading{
-
-  max-width:760px;
-
-  margin-bottom:38px;
-
-}
-
-
-.section-heading.center{
-
-  margin:
-    0 auto 38px;
-
-  text-align:center;
-
-}
-
 
 .section-label{
-
   color:var(--gold-dark);
 
   font-size:.58rem;
   font-weight:900;
 
   letter-spacing:.14em;
-
 }
 
+.section-heading{
+  max-width:760px;
+
+  margin-bottom:36px;
+}
+
+.section-heading.center{
+  margin:
+    0 auto 36px;
+
+  text-align:center;
+}
 
 .section-heading h2{
-
   margin:
     8px 0 11px;
 
@@ -1157,7 +951,6 @@ button{
 
   font-family:
     Georgia,
-    "Times New Roman",
     serif;
 
   font-size:
@@ -1170,43 +963,32 @@ button{
   line-height:1;
 
   font-weight:500;
-
 }
 
-
 .section-heading p{
-
   margin:0;
 
   color:var(--muted);
 
   font-size:.8rem;
   line-height:1.7;
-
 }
 
 
 /* =========================================================
-   ABOUT DR KAMA
+   ABOUT
    ========================================================= */
 
 .about-grid{
-
   display:grid;
 
   grid-template-columns:
-    .95fr
-    1.05fr;
+    .95fr 1.05fr;
 
-  gap:65px;
-
-  align-items:start;
-
+  gap:60px;
 }
 
-
 .about-copy h3{
-
   margin:
     0 0 18px;
 
@@ -1214,7 +996,6 @@ button{
 
   font-family:
     Georgia,
-    "Times New Roman",
     serif;
 
   font-size:
@@ -1224,25 +1005,19 @@ button{
       2.5rem
     );
 
-  line-height:1.28;
-
   font-weight:500;
 
+  line-height:1.28;
 }
 
-
 .about-copy p{
-
   color:#5e6b72;
 
   font-size:.8rem;
   line-height:1.8;
-
 }
 
-
 .about-quote{
-
   margin-top:24px;
 
   padding:20px;
@@ -1250,39 +1025,25 @@ button{
   border-radius:14px;
 
   color:#735b22;
-
   background:#fbf2df;
 
   font-family:
     Georgia,
-    "Times New Roman",
     serif;
 
   font-size:1rem;
-
 }
 
-
-/* =========================================================
-   EXPERTISE
-   ========================================================= */
-
 .expertise-grid{
-
   display:grid;
 
   grid-template-columns:
     repeat(2,1fr);
 
   gap:9px;
-
 }
 
-
 .expertise-card{
-
-  min-height:135px;
-
   padding:19px;
 
   border:
@@ -1291,77 +1052,55 @@ button{
   border-radius:14px;
 
   background:#fff;
-
-  box-shadow:
-    0 5px 15px
-    rgba(20,40,55,.03);
-
 }
 
-
 .expertise-card span{
-
   color:var(--gold-dark);
 
   font-size:.55rem;
   font-weight:900;
-
 }
 
-
 .expertise-card h3{
-
   margin:
     10px 0 7px;
 
   color:var(--navy);
 
   font-size:.76rem;
-
 }
 
-
 .expertise-card p{
-
   margin:0;
 
   color:#717b80;
 
   font-size:.6rem;
   line-height:1.5;
-
 }
 
 
 /* =========================================================
-   KAMA-AI PRIMARY SECTION
+   KAMA-AI
    ========================================================= */
 
 .kama-layout{
-
   display:grid;
 
   grid-template-columns:
-    .8fr
-    1.2fr;
+    .8fr 1.2fr;
 
   align-items:center;
 
-  gap:70px;
-
+  gap:65px;
 }
-
 
 .robot-area{
-
   display:flex;
   justify-content:center;
-
 }
 
-
 .robot-circle{
-
   width:390px;
   height:390px;
 
@@ -1379,12 +1118,9 @@ button{
       rgba(213,168,55,.12) 46% 64%,
       rgba(255,255,255,.03) 65%
     );
-
 }
 
-
 .robot-circle img{
-
   width:275px;
   height:275px;
 
@@ -1395,23 +1131,18 @@ button{
       0 22px 25px
       rgba(0,0,0,.28)
     );
-
 }
-
 
 .kama-copy .section-label{
   color:#e7bd57;
 }
 
-
 .kama-copy h2{
-
   margin:
     8px 0 14px;
 
   font-family:
     Georgia,
-    "Times New Roman",
     serif;
 
   font-size:
@@ -1424,12 +1155,9 @@ button{
   line-height:.9;
 
   font-weight:500;
-
 }
 
-
 .kama-copy h2 span{
-
   display:block;
 
   margin-top:6px;
@@ -1437,26 +1165,18 @@ button{
   color:#e6bc54;
 
   font-size:.54em;
-
-  line-height:1.1;
-
 }
 
-
 .kama-copy p{
-
   max-width:640px;
 
   color:#cedbe5;
 
   font-size:.82rem;
   line-height:1.72;
-
 }
 
-
 .kama-tools{
-
   display:flex;
   flex-wrap:wrap;
 
@@ -1464,12 +1184,9 @@ button{
 
   margin:
     23px 0;
-
 }
 
-
 .kama-tools span{
-
   padding:
     8px 10px;
 
@@ -1484,20 +1201,14 @@ button{
     rgba(255,255,255,.07);
 
   font-size:.56rem;
-  font-weight:700;
-
 }
 
-
 .kama-button{
-
   min-height:56px;
 
   display:inline-flex;
   align-items:center;
   justify-content:center;
-
-  gap:9px;
 
   padding:
     14px 21px;
@@ -1513,35 +1224,26 @@ button{
       var(--gold)
     );
 
-  box-shadow:
-    0 12px 24px
-    rgba(0,0,0,.20);
-
   font-size:.72rem;
   font-weight:900;
-
 }
 
 
 /* =========================================================
-   ACADEMIC CARDS
+   ACADEMIC
    ========================================================= */
 
 .academic-grid{
-
   display:grid;
 
   grid-template-columns:
     repeat(3,1fr);
 
   gap:11px;
-
 }
 
-
 .academic-card{
-
-  min-height:215px;
+  min-height:205px;
 
   padding:24px;
 
@@ -1551,28 +1253,16 @@ button{
   border-radius:16px;
 
   background:#fff;
-
-  box-shadow:
-    0 5px 16px
-    rgba(20,40,55,.03);
-
 }
 
-
 .academic-card small{
-
   color:var(--gold-dark);
 
   font-size:.54rem;
   font-weight:900;
-
-  letter-spacing:.1em;
-
 }
 
-
 .academic-card h3{
-
   margin:
     17px 0 8px;
 
@@ -1580,34 +1270,23 @@ button{
 
   font-family:
     Georgia,
-    "Times New Roman",
     serif;
 
   font-size:1.15rem;
-
 }
 
-
 .academic-card p{
-
-  margin:
-    0 0 16px;
-
   color:#6b777c;
 
   font-size:.67rem;
   line-height:1.6;
-
 }
 
-
 .card-link{
-
   color:var(--navy-mid);
 
   font-size:.58rem;
   font-weight:850;
-
 }
 
 
@@ -1616,32 +1295,24 @@ button{
    ========================================================= */
 
 .contact{
-
   padding:
     75px 0;
 
   background:var(--cream);
-
 }
 
-
 .contact-grid{
-
   display:grid;
 
   grid-template-columns:
-    1fr
-    1fr;
+    1fr 1fr;
 
   gap:55px;
 
   align-items:center;
-
 }
 
-
 .contact h2{
-
   margin:
     8px 0 11px;
 
@@ -1649,7 +1320,6 @@ button{
 
   font-family:
     Georgia,
-    "Times New Roman",
     serif;
 
   font-size:
@@ -1660,44 +1330,30 @@ button{
     );
 
   font-weight:500;
-
 }
 
-
 .contact p{
-
   color:#66747b;
 
   font-size:.78rem;
   line-height:1.68;
-
 }
-
 
 .contact-list{
-
   display:grid;
-
   gap:8px;
-
 }
 
-
 .contact-item{
-
-  min-height:58px;
-
   display:grid;
 
   grid-template-columns:
     92px 1fr;
 
-  align-items:center;
-
   gap:14px;
 
   padding:
-    12px 15px;
+    14px 15px;
 
   border:
     1px solid #deddd6;
@@ -1705,28 +1361,19 @@ button{
   border-radius:11px;
 
   background:#fff;
-
 }
 
-
 .contact-item strong{
-
   color:var(--gold-dark);
 
   font-size:.55rem;
-
 }
-
 
 .contact-item a,
 .contact-item span{
-
   color:#3a4a52;
 
   font-size:.68rem;
-
-  overflow-wrap:anywhere;
-
 }
 
 
@@ -1735,94 +1382,50 @@ button{
    ========================================================= */
 
 .footer{
-
   padding:
     34px 0 22px;
 
   color:#aebfcd;
 
   background:var(--navy-dark);
-
 }
-
 
 .footer-main{
-
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
 
   gap:20px;
-
 }
 
-
 .footer strong{
-
   display:block;
 
   color:#fff;
 
   font-family:
     Georgia,
-    "Times New Roman",
     serif;
-
-  font-size:.9rem;
-
 }
-
 
 .footer small{
-
-  display:block;
-
-  margin-top:4px;
-
   font-size:.5rem;
-
 }
 
-
 .footer-links{
-
   display:flex;
-  flex-wrap:wrap;
 
   gap:17px;
 
   font-size:.56rem;
-
-}
-
-
-.footer-bottom{
-
-  margin-top:22px;
-
-  padding-top:17px;
-
-  display:flex;
-  justify-content:space-between;
-
-  gap:15px;
-
-  border-top:
-    1px solid rgba(255,255,255,.09);
-
-  color:#8499aa;
-
-  font-size:.5rem;
-
 }
 
 
 /* =========================================================
-   FLOATING KAMA-AI
+   FLOATING KAMA
    ========================================================= */
 
 .floating-kama{
-
   width:62px;
   height:62px;
 
@@ -1846,22 +1449,18 @@ button{
   box-shadow:
     0 12px 28px
     rgba(3,25,47,.25);
-
 }
 
-
 .floating-kama img{
-
   width:50px;
   height:50px;
 
   object-fit:contain;
-
 }
 
 
 /* =========================================================
-   TABLET / MOBILE
+   MOBILE
    ========================================================= */
 
 @media(max-width:920px){
@@ -1870,15 +1469,12 @@ button{
     min-height:66px;
   }
 
-
   .menu-button{
     display:grid;
     place-items:center;
   }
 
-
   .nav-links{
-
     width:100%;
 
     max-height:0;
@@ -1895,23 +1491,15 @@ button{
 
     background:#fff;
 
-    box-shadow:
-      0 16px 28px
-      rgba(15,31,46,.13);
-
     transition:
       max-height .22s ease;
-
   }
-
 
   .nav-links.open{
     max-height:500px;
   }
 
-
   .nav-links a{
-
     display:block;
 
     padding:
@@ -1919,190 +1507,71 @@ button{
 
     border-bottom:
       1px solid #eef0f0;
-
   }
 
-
   .kama-nav{
-
     margin:
       10px 12px 14px;
 
     text-align:center;
-
   }
-
-
-  /* HERO */
-
-  .hero{
-    min-height:auto;
-  }
-
 
   .hero-inner{
-
     min-height:auto;
 
     grid-template-columns:1fr;
 
-    gap:28px;
+    gap:25px;
 
     padding:
-      42px 0 58px;
-
+      42px 0 55px;
   }
-
 
   .hero-copy{
-
     order:1;
 
-    padding-right:0;
-
     text-align:center;
-
   }
 
+  .hero-portrait{
+    order:2;
 
-  .hero-eyebrow{
-    justify-content:center;
+    min-height:500px;
   }
 
-
-  .hero h1{
-
-    margin-left:auto;
-    margin-right:auto;
-
-    font-size:
-      clamp(
-        3.4rem,
-        14vw,
-        5.6rem
-      );
-
-  }
-
-
-  .hero-description{
-    margin:auto;
-  }
-
-
+  .eyebrow,
   .hero-tags,
   .hero-actions{
     justify-content:center;
   }
 
-
-  .hero-quote{
+  .hero-description,
+  .hero-quote,
+  .kama-mini{
     margin-left:auto;
     margin-right:auto;
   }
-
-
-  .hero-kama-note{
-
-    margin-left:auto;
-    margin-right:auto;
-
-    justify-content:center;
-
-  }
-
-
-  .hero-portrait-column{
-
-    min-height:500px;
-
-    order:2;
-
-  }
-
-
-  .portrait-halo{
-
-    width:400px;
-    height:400px;
-
-    top:40px;
-
-  }
-
-
-  .portrait-halo::after{
-
-    width:300px;
-    height:300px;
-
-    left:-20px;
-
-  }
-
-
-  .portrait-frame{
-
-    width:350px;
-    height:455px;
-
-    border-radius:
-      170px 170px
-      22px 22px;
-
-  }
-
-
-  .portrait-label{
-
-    left:
-      calc(
-        50% - 180px
-      );
-
-    bottom:35px;
-
-  }
-
-
-  /* SHORTCUTS */
 
   .shortcut-grid{
     grid-template-columns:
       repeat(3,1fr);
   }
 
-
-  /* MAIN SECTIONS */
-
   .about-grid,
   .kama-layout,
   .contact-grid{
-
     grid-template-columns:1fr;
 
     gap:35px;
-
   }
-
 
   .kama-copy{
     text-align:center;
   }
 
-
-  .kama-copy p{
-
-    margin-left:auto;
-    margin-right:auto;
-
-  }
-
-
   .kama-tools{
     justify-content:center;
   }
-
 
   .academic-grid{
     grid-template-columns:
@@ -2111,10 +1580,6 @@ button{
 
 }
 
-
-/* =========================================================
-   PHONE
-   ========================================================= */
 
 @media(max-width:560px){
 
@@ -2123,311 +1588,116 @@ button{
       calc(100% - 22px);
   }
 
-
   .brand-mark{
-
     width:39px;
     height:39px;
-
   }
-
 
   .brand-copy strong{
     font-size:.72rem;
   }
 
-
   .brand-copy small{
     display:none;
   }
 
-
-  /* HERO */
-
-  .hero-inner{
-
-    padding:
-      28px 0 42px;
-
-  }
-
-
-  .hero-eyebrow{
-    font-size:.51rem;
-  }
-
-
   .hero h1{
-
     font-size:
       clamp(
         2.8rem,
         16vw,
         4.25rem
       );
-
   }
-
-
-  .hero-role{
-
-    font-size:.59rem;
-
-    line-height:1.45;
-
-  }
-
 
   .hero-description{
-
     font-size:.73rem;
-
-    line-height:1.65;
-
   }
-
-
-  .hero-tags{
-
-    margin:
-      17px 0 20px;
-
-  }
-
-
-  .hero-tags span{
-    font-size:.49rem;
-  }
-
 
   .hero-actions{
-
     display:grid;
 
     width:100%;
-
   }
 
-
-  .hero-primary,
-  .hero-secondary{
-
+  .primary-button,
+  .secondary-button{
     width:100%;
-
   }
 
-
-  .hero-quote{
-    font-size:.76rem;
-  }
-
-
-  .hero-kama-note{
-
-    max-width:310px;
-
-    font-size:.5rem;
-
-    text-align:left;
-
-  }
-
-
-  .hero-portrait-column{
+  .hero-portrait{
     min-height:385px;
   }
 
-
   .portrait-halo{
-
     width:305px;
     height:305px;
 
     top:30px;
-
   }
 
-
   .portrait-halo::after{
-
     width:245px;
     height:245px;
 
     left:-12px;
-    bottom:-15px;
-
   }
 
-
   .portrait-frame{
-
     width:285px;
     height:355px;
 
     border-radius:
       145px 145px
       18px 18px;
-
   }
-
-
-  .portrait-frame img{
-
-    object-position:center 10%;
-
-    transform:
-      scale(1.04);
-
-  }
-
 
   .portrait-label{
-
-    min-width:175px;
-
     left:
-      calc(
-        50% - 155px
-      );
+      calc(50% - 155px);
 
     bottom:21px;
-
-    padding:
-      10px 13px;
-
   }
-
-
-  .portrait-label strong{
-    font-size:.7rem;
-  }
-
-
-  .portrait-label span{
-    font-size:.43rem;
-  }
-
-
-  /* SHORTCUTS */
 
   .shortcut-grid{
-
     grid-template-columns:
       repeat(2,1fr);
-
-    gap:5px;
-
-    padding:7px;
-
   }
-
-
-  .shortcut{
-    min-height:92px;
-  }
-
-
-  .shortcut strong{
-    font-size:.55rem;
-  }
-
-
-  /* CONTENT */
 
   .section{
     padding:
       65px 0;
   }
 
-
   .expertise-grid,
   .academic-grid{
-
     grid-template-columns:1fr;
-
   }
-
 
   .robot-circle{
-
     width:270px;
     height:270px;
-
   }
-
 
   .robot-circle img{
-
     width:195px;
     height:195px;
-
   }
-
-
-  .kama-copy h2{
-    font-size:2.7rem;
-  }
-
 
   .kama-button{
     width:100%;
   }
 
-
   .contact-item{
-
     grid-template-columns:1fr;
 
     gap:4px;
-
   }
 
-
-  .footer-main,
-  .footer-bottom{
-
+  .footer-main{
     flex-direction:column;
 
     align-items:flex-start;
-
-  }
-
-
-  .floating-kama{
-
-    width:54px;
-    height:54px;
-
-    right:12px;
-    bottom:12px;
-
-  }
-
-
-  .floating-kama img{
-
-    width:43px;
-    height:43px;
-
-  }
-
-}
-
-
-/* =========================================================
-   ACCESSIBILITY
-   ========================================================= */
-
-@media(prefers-reduced-motion:reduce){
-
-  *,
-  *::before,
-  *::after{
-
-    scroll-behavior:auto !important;
-
-    transition:none !important;
-
   }
 
 }
@@ -2439,24 +1709,15 @@ button{
 <body>
 
 
-<!-- =======================================================
-     HEADER
-     ======================================================= -->
-
 <header class="header">
 
   <nav class="container nav">
 
-
-    <a
-      href="#home"
-      class="brand"
-    >
+    <a href="#home" class="brand">
 
       <div class="brand-mark">
         DK
       </div>
-
 
       <div class="brand-copy">
 
@@ -2504,7 +1765,6 @@ button{
         HUBUNGI
       </a>
 
-
       <a
         href="https://drkama-ai-v6.netlify.app/kama-ai/"
         class="kama-nav"
@@ -2519,9 +1779,9 @@ button{
 </header>
 
 
-<!-- =======================================================
-     HERO PREMIUM
-     ======================================================= -->
+<!-- ======================================================
+     HERO
+     ====================================================== -->
 
 <section
   id="home"
@@ -2531,10 +1791,7 @@ button{
   <div class="container hero-inner">
 
 
-    <!-- DR KAMA PORTRAIT -->
-
-    <div class="hero-portrait-column">
-
+    <div class="hero-portrait">
 
       <div class="portrait-halo"></div>
 
@@ -2561,16 +1818,13 @@ button{
 
       </div>
 
-
     </div>
 
-
-    <!-- HERO CONTENT -->
 
     <div class="hero-copy">
 
 
-      <div class="hero-eyebrow">
+      <div class="eyebrow">
         PENDIDIK · PENYELIDIK · PEMBIMBING
       </div>
 
@@ -2606,78 +1860,50 @@ button{
 
       <div class="hero-tags">
 
-        <span>
-          Pendidikan Khas
-        </span>
-
-        <span>
-          Pendidikan Inklusif
-        </span>
-
-        <span>
-          Instrumen & Pentaksiran
-        </span>
-
-        <span>
-          Transisi Kerjaya
-        </span>
+        <span>Pendidikan Khas</span>
+        <span>Pendidikan Inklusif</span>
+        <span>Instrumen & Pentaksiran</span>
+        <span>Transisi Kerjaya</span>
 
       </div>
 
 
       <div class="hero-actions">
 
-
         <a
           href="https://drkama-ai-v6.netlify.app/kama-ai/"
-          class="hero-primary"
+          class="primary-button"
         >
-
-          🤖 GUNAKAN KAMA-AI
-
-          <span>
-            →
-          </span>
-
+          🤖 GUNAKAN KAMA-AI →
         </a>
-
 
         <a
           href="#dr-kama"
-          class="hero-secondary"
+          class="secondary-button"
         >
           Kenali Dr. Kama
         </a>
-
 
       </div>
 
 
       <div class="hero-quote">
-
         “Setiap murid unik, setiap potensi berharga.”
-
       </div>
 
 
-      <div class="hero-kama-note">
+      <div class="kama-mini">
 
         <img
           src="https://drkama-ai-v6.netlify.app/assets/imej%20kama-ai-robot.png"
-          alt="KAMA-AI"
+          alt="Robot KAMA-AI"
         >
 
         <div>
-
           Mahukan bantuan akademik?
-
-          <strong>
-            KAMA-AI
-          </strong>
-
+          <strong>KAMA-AI</strong>
           membantu RPH, proposal, instrumen,
           research gap, tesis dan mock viva.
-
         </div>
 
       </div>
@@ -2685,149 +1911,63 @@ button{
 
     </div>
 
-
   </div>
 
 </section>
 
 
-<!-- =======================================================
-     QUICK ACADEMIC LINKS
-     ======================================================= -->
+<!-- ======================================================
+     SHORTCUTS
+     ====================================================== -->
 
 <section class="shortcuts">
 
   <div class="container shortcut-grid">
 
-
-    <a
-      href="#publications"
-      class="shortcut"
-    >
-
-      <div class="shortcut-icon">
-        P
-      </div>
-
-      <strong>
-        Publications
-      </strong>
-
-      <small>
-        Penerbitan akademik
-      </small>
-
+    <a href="#publications" class="shortcut">
+      <div class="shortcut-icon">P</div>
+      <strong>Publications</strong>
+      <small>Penerbitan akademik</small>
     </a>
 
-
-    <a
-      href="#awards"
-      class="shortcut"
-    >
-
-      <div class="shortcut-icon">
-        ★
-      </div>
-
-      <strong>
-        Awards
-      </strong>
-
-      <small>
-        Pengiktirafan
-      </small>
-
+    <a href="#awards" class="shortcut">
+      <div class="shortcut-icon">★</div>
+      <strong>Awards</strong>
+      <small>Pengiktirafan</small>
     </a>
 
-
-    <a
-      href="#projects"
-      class="shortcut"
-    >
-
-      <div class="shortcut-icon">
-        ◇
-      </div>
-
-      <strong>
-        Projects
-      </strong>
-
-      <small>
-        Projek penyelidikan
-      </small>
-
+    <a href="#projects" class="shortcut">
+      <div class="shortcut-icon">◇</div>
+      <strong>Projects</strong>
+      <small>Projek penyelidikan</small>
     </a>
 
-
-    <a
-      href="#collaboration"
-      class="shortcut"
-    >
-
-      <div class="shortcut-icon">
-        C
-      </div>
-
-      <strong>
-        Collaboration
-      </strong>
-
-      <small>
-        Jaringan akademik
-      </small>
-
+    <a href="#collaboration" class="shortcut">
+      <div class="shortcut-icon">C</div>
+      <strong>Collaboration</strong>
+      <small>Jaringan akademik</small>
     </a>
 
-
-    <a
-      href="#citations"
-      class="shortcut"
-    >
-
-      <div class="shortcut-icon">
-        ↑
-      </div>
-
-      <strong>
-        Citation Statistics
-      </strong>
-
-      <small>
-        Profil & metrik
-      </small>
-
+    <a href="#citations" class="shortcut">
+      <div class="shortcut-icon">↑</div>
+      <strong>Citation Statistics</strong>
+      <small>Profil & metrik</small>
     </a>
 
-
-    <a
-      href="#teaching"
-      class="shortcut"
-    >
-
-      <div class="shortcut-icon">
-        T
-      </div>
-
-      <strong>
-        Teaching
-      </strong>
-
-      <small>
-        Pengajaran & penyeliaan
-      </small>
-
+    <a href="#teaching" class="shortcut">
+      <div class="shortcut-icon">T</div>
+      <strong>Teaching</strong>
+      <small>Pengajaran & penyeliaan</small>
     </a>
-
 
   </div>
 
 </section>
 
 
-<!-- =======================================================
-     ABOUT DR KAMA
-     ======================================================= -->
+<!-- ======================================================
+     ABOUT
+     ====================================================== -->
 
 <section
   id="dr-kama"
@@ -2855,43 +1995,29 @@ button{
 
       <div class="about-copy">
 
-
         <h3>
-
-          Pendidikan yang bermakna bermula
-          dengan memahami keunikan setiap individu.
-
+          Pendidikan yang bermakna bermula dengan
+          memahami keunikan setiap individu.
         </h3>
 
-
         <p>
-
           Dr. Kama Shaffeei terlibat dalam bidang
           Pendidikan Khas dengan kepakaran merangkumi
           Pendidikan Inklusif, pembangunan kurikulum,
           pembangunan instrumen, kemahiran vokasional,
           transisi kerjaya dan pendidikan guru.
-
         </p>
-
 
         <p>
-
           Fokus akademiknya menghubungkan penyelidikan
-          dengan amalan pendidikan, pembangunan
-          profesional dan penyelesaian yang boleh
-          digunakan dalam konteks sebenar.
-
+          dengan amalan pendidikan, pembangunan profesional
+          dan penyelesaian yang boleh digunakan dalam
+          konteks sebenar.
         </p>
 
-
         <div class="about-quote">
-
-          “Setiap murid unik,
-          setiap potensi berharga.”
-
+          “Setiap murid unik, setiap potensi berharga.”
         </div>
-
 
       </div>
 
@@ -2901,117 +2027,61 @@ button{
         class="expertise-grid"
       >
 
-
         <article class="expertise-card">
-
-          <span>
-            01
-          </span>
-
-          <h3>
-            Pendidikan Khas
-          </h3>
-
+          <span>01</span>
+          <h3>Pendidikan Khas</h3>
           <p>
-            Pembelajaran dan pembangunan potensi
-            murid berkeperluan pendidikan khas.
+            Pembelajaran dan pembangunan potensi murid
+            berkeperluan pendidikan khas.
           </p>
-
         </article>
 
-
         <article class="expertise-card">
-
-          <span>
-            02
-          </span>
-
-          <h3>
-            Pendidikan Inklusif
-          </h3>
-
+          <span>02</span>
+          <h3>Pendidikan Inklusif</h3>
           <p>
-            Akses, penyertaan bermakna dan
-            sokongan dalam persekitaran pendidikan.
+            Akses dan penyertaan bermakna
+            dalam pendidikan.
           </p>
-
         </article>
 
-
         <article class="expertise-card">
-
-          <span>
-            03
-          </span>
-
-          <h3>
-            Instrumen & Pentaksiran
-          </h3>
-
+          <span>03</span>
+          <h3>Instrumen & Pentaksiran</h3>
           <p>
-            Konstruk, item, kesahan,
-            kebolehpercayaan dan pengukuran pendidikan.
+            Konstruk, item, kesahan dan
+            kebolehpercayaan instrumen.
           </p>
-
         </article>
 
-
         <article class="expertise-card">
-
-          <span>
-            04
-          </span>
-
-          <h3>
-            Transisi Kerjaya
-          </h3>
-
+          <span>04</span>
+          <h3>Transisi Kerjaya</h3>
           <p>
             Kemahiran vokasional dan persediaan
-            individu menuju latihan dan pekerjaan.
+            menuju pekerjaan.
           </p>
-
         </article>
 
-
         <article class="expertise-card">
-
-          <span>
-            05
-          </span>
-
-          <h3>
-            Kurikulum
-          </h3>
-
+          <span>05</span>
+          <h3>Kurikulum</h3>
           <p>
-            Pembangunan kurikulum yang responsif
-            terhadap keperluan pembelajaran.
+            Pembangunan kurikulum berdasarkan
+            keperluan pembelajaran.
           </p>
-
         </article>
 
-
         <article class="expertise-card">
-
-          <span>
-            06
-          </span>
-
-          <h3>
-            Pendidikan Guru
-          </h3>
-
+          <span>06</span>
+          <h3>Pendidikan Guru</h3>
           <p>
             Kompetensi, pedagogi dan pembangunan
-            profesionalisme pendidik.
+            profesional guru.
           </p>
-
         </article>
 
-
       </div>
-
 
     </div>
 
@@ -3020,9 +2090,9 @@ button{
 </section>
 
 
-<!-- =======================================================
-     KAMA-AI PRIMARY PRODUCT
-     ======================================================= -->
+<!-- ======================================================
+     KAMA-AI
+     ====================================================== -->
 
 <section class="section section-navy">
 
@@ -3045,11 +2115,9 @@ button{
 
     <div class="kama-copy">
 
-
       <div class="section-label">
         PRODUK UTAMA
       </div>
-
 
       <h2>
 
@@ -3061,50 +2129,24 @@ button{
 
       </h2>
 
-
       <p>
-
-        KAMA-AI membantu pengguna menghasilkan,
-        menyusun dan menganalisis kerja akademik
-        untuk pendidikan, penyelidikan,
-        pembangunan instrumen, penulisan tesis
-        dan persediaan viva.
-
+        Gunakan KAMA-AI untuk membantu menghasilkan,
+        menyusun dan menganalisis kerja akademik bagi
+        pendidikan, penyelidikan, pembangunan instrumen,
+        penulisan tesis dan persediaan viva.
       </p>
-
 
       <div class="kama-tools">
 
-        <span>
-          Bina RPH
-        </span>
-
-        <span>
-          Proposal Kajian
-        </span>
-
-        <span>
-          Research Gap
-        </span>
-
-        <span>
-          Bina Instrumen
-        </span>
-
-        <span>
-          Rubrik
-        </span>
-
-        <span>
-          Semak Tesis
-        </span>
-
-        <span>
-          Mock Viva
-        </span>
+        <span>Bina RPH</span>
+        <span>Proposal Kajian</span>
+        <span>Research Gap</span>
+        <span>Bina Instrumen</span>
+        <span>Rubrik</span>
+        <span>Semak Tesis</span>
+        <span>Mock Viva</span>
 
       </div>
-
 
       <a
         href="https://drkama-ai-v6.netlify.app/kama-ai/"
@@ -3113,18 +2155,16 @@ button{
         🤖 BUKA KAMA-AI SEKARANG →
       </a>
 
-
     </div>
-
 
   </div>
 
 </section>
 
 
-<!-- =======================================================
-     ACADEMIC ACCESS
-     ======================================================= -->
+<!-- ======================================================
+     ACADEMIC
+     ====================================================== -->
 
 <section
   id="akademik"
@@ -3145,11 +2185,8 @@ button{
       </h2>
 
       <p>
-
-        Maklumat tambahan disediakan sebagai akses
-        sekunder supaya laman utama kekal ringkas,
-        profesional dan fokus kepada penggunaan KAMA-AI.
-
+        Kandungan akademik tambahan kekal tersedia,
+        tetapi KAMA-AI menjadi fokus utama laman ini.
       </p>
 
     </div>
@@ -3157,174 +2194,85 @@ button{
 
     <div class="academic-grid">
 
-
-      <article
-        id="publications"
-        class="academic-card"
-      >
-
-        <small>
-          01 · PUBLICATIONS
-        </small>
-
-        <h3>
-          Publications
-        </h3>
-
+      <article id="publications" class="academic-card">
+        <small>01 · PUBLICATIONS</small>
+        <h3>Publications</h3>
         <p>
-          Penerbitan, artikel, buku dan hasil
-          penulisan akademik.
+          Penerbitan, artikel, buku dan
+          hasil penulisan akademik.
         </p>
-
-        <a
-          href="#hubungi"
-          class="card-link"
-        >
+        <a href="#hubungi" class="card-link">
           Lihat maklumat →
         </a>
-
       </article>
 
 
-      <article
-        id="awards"
-        class="academic-card"
-      >
-
-        <small>
-          02 · AWARDS
-        </small>
-
-        <h3>
-          Awards & Recognition
-        </h3>
-
+      <article id="awards" class="academic-card">
+        <small>02 · AWARDS</small>
+        <h3>Awards & Recognition</h3>
         <p>
           Pengiktirafan berkaitan pendidikan,
-          akademik, penyelidikan dan inovasi.
+          penyelidikan dan inovasi.
         </p>
-
-        <a
-          href="#hubungi"
-          class="card-link"
-        >
+        <a href="#hubungi" class="card-link">
           Lihat maklumat →
         </a>
-
       </article>
 
 
-      <article
-        id="projects"
-        class="academic-card"
-      >
-
-        <small>
-          03 · PROJECTS
-        </small>
-
-        <h3>
-          Research Projects
-        </h3>
-
+      <article id="projects" class="academic-card">
+        <small>03 · PROJECTS</small>
+        <h3>Research Projects</h3>
         <p>
           Projek penyelidikan dan pembangunan
           dalam bidang kepakaran.
         </p>
-
-        <a
-          href="#hubungi"
-          class="card-link"
-        >
+        <a href="#hubungi" class="card-link">
           Pertanyaan projek →
         </a>
-
       </article>
 
 
-      <article
-        id="collaboration"
-        class="academic-card"
-      >
-
-        <small>
-          04 · COLLABORATION
-        </small>
-
-        <h3>
-          Academic Collaboration
-        </h3>
-
+      <article id="collaboration" class="academic-card">
+        <small>04 · COLLABORATION</small>
+        <h3>Academic Collaboration</h3>
         <p>
           Kolaborasi pendidikan, penyelidikan
           dan pembangunan profesional.
         </p>
-
-        <a
-          href="#hubungi"
-          class="card-link"
-        >
+        <a href="#hubungi" class="card-link">
           Hubungi Dr. Kama →
         </a>
-
       </article>
 
 
-      <article
-        id="citations"
-        class="academic-card"
-      >
-
-        <small>
-          05 · ACADEMIC IMPACT
-        </small>
-
-        <h3>
-          Citation Statistics
-        </h3>
-
+      <article id="citations" class="academic-card">
+        <small>05 · ACADEMIC IMPACT</small>
+        <h3>Citation Statistics</h3>
         <p>
           Citation, H-index dan metrik akademik
-          melalui profil sumber yang disahkan.
+          melalui profil yang boleh disahkan.
         </p>
-
-        <a
-          href="#hubungi"
-          class="card-link"
-        >
+        <a href="#hubungi" class="card-link">
           Academic profile →
         </a>
-
       </article>
 
 
-      <article
-        id="teaching"
-        class="academic-card"
-      >
-
-        <small>
-          06 · TEACHING
-        </small>
-
-        <h3>
-          Teaching & Supervision
-        </h3>
-
+      <article id="teaching" class="academic-card">
+        <small>06 · TEACHING</small>
+        <h3>Teaching & Supervision</h3>
         <p>
-          Pengajaran, penyeliaan, pembangunan
-          instrumen dan persediaan viva.
+          Pengajaran, penyeliaan,
+          pembangunan instrumen dan viva.
         </p>
-
         <a
           href="https://drkama-ai-v6.netlify.app/kama-ai/"
           class="card-link"
         >
           Gunakan KAMA-AI →
         </a>
-
       </article>
-
 
     </div>
 
@@ -3333,9 +2281,9 @@ button{
 </section>
 
 
-<!-- =======================================================
+<!-- ======================================================
      CONTACT
-     ======================================================= -->
+     ====================================================== -->
 
 <section
   id="hubungi"
@@ -3344,180 +2292,113 @@ button{
 
   <div class="container contact-grid">
 
-
     <div>
-
 
       <div class="section-label">
         HUBUNGI
       </div>
 
-
       <h2>
         Hubungi Dr. Kama
       </h2>
 
-
       <p>
-
         Untuk pertanyaan akademik, penyelidikan
-        atau kolaborasi, gunakan saluran hubungan
-        rasmi berikut. Untuk bantuan akademik secara
-        terus, gunakan KAMA-AI.
-
+        atau kolaborasi gunakan saluran rasmi.
+        Untuk bantuan akademik segera,
+        gunakan KAMA-AI.
       </p>
-
 
       <a
         href="https://drkama-ai-v6.netlify.app/kama-ai/"
-        class="hero-primary"
+        class="primary-button"
       >
         🤖 Gunakan KAMA-AI →
       </a>
-
 
     </div>
 
 
     <div class="contact-list">
 
-
       <div class="contact-item">
-
-        <strong>
-          E-MEL
-        </strong>
-
-        <a
-          href="mailto:kama@fpm.upsi.edu.my"
-        >
+        <strong>E-MEL</strong>
+        <a href="mailto:kama@fpm.upsi.edu.my">
           kama@fpm.upsi.edu.my
         </a>
-
       </div>
 
-
       <div class="contact-item">
-
-        <strong>
-          TELEFON
-        </strong>
-
-        <a
-          href="tel:+601548797663"
-        >
+        <strong>TELEFON</strong>
+        <a href="tel:+601548797663">
           +60 15-4879 7663
         </a>
-
       </div>
 
-
       <div class="contact-item">
-
-        <strong>
-          INSTITUSI
-        </strong>
-
+        <strong>INSTITUSI</strong>
         <span>
           Universiti Pendidikan Sultan Idris
         </span>
-
       </div>
 
-
       <div class="contact-item">
-
-        <strong>
-          FAKULTI
-        </strong>
-
+        <strong>FAKULTI</strong>
         <span>
           Fakulti Pembangunan Manusia
         </span>
-
       </div>
 
-
     </div>
-
 
   </div>
 
 </section>
 
 
-<!-- =======================================================
-     FOOTER
-     ======================================================= -->
-
 <footer class="footer">
 
-  <div class="container">
+  <div class="container footer-main">
 
+    <div>
 
-    <div class="footer-main">
+      <strong>
+        Dr. Kama Shaffeei
+      </strong>
 
-
-      <div>
-
-        <strong>
-          Dr. Kama Shaffeei
-        </strong>
-
-        <small>
-          Pendidikan · Penyelidikan · Inovasi
-        </small>
-
-      </div>
-
-
-      <div class="footer-links">
-
-        <a href="#dr-kama">
-          Dr. Kama
-        </a>
-
-        <a href="#kepakaran">
-          Kepakaran
-        </a>
-
-        <a href="#akademik">
-          Akademik
-        </a>
-
-        <a
-          href="https://drkama-ai-v6.netlify.app/kama-ai/"
-        >
-          KAMA-AI
-        </a>
-
-      </div>
-
+      <small>
+        Pendidikan · Penyelidikan · Inovasi
+      </small>
 
     </div>
 
 
-    <div class="footer-bottom">
+    <div class="footer-links">
 
-      <span>
-        © 2026 Dr. Kama Shaffeei
-      </span>
+      <a href="#dr-kama">
+        Dr. Kama
+      </a>
 
-      <span>
-        Academic Profile · KAMA-AI
-      </span>
+      <a href="#kepakaran">
+        Kepakaran
+      </a>
+
+      <a href="#akademik">
+        Akademik
+      </a>
+
+      <a
+        href="https://drkama-ai-v6.netlify.app/kama-ai/"
+      >
+        KAMA-AI
+      </a>
 
     </div>
-
 
   </div>
 
 </footer>
 
-
-<!-- =======================================================
-     FLOATING KAMA-AI
-     ======================================================= -->
 
 <a
   href="https://drkama-ai-v6.netlify.app/kama-ai/"
@@ -3535,9 +2416,7 @@ button{
 
 <script>
 
-/* =========================================================
-   MOBILE MENU
-   ========================================================= */
+/* MOBILE MENU */
 
 const menuButton =
   document.querySelector("#menuButton");
@@ -3551,60 +2430,42 @@ menuButton.addEventListener(
   () => {
 
     const open =
-      navLinks
-        .classList
-        .toggle("open");
+      navLinks.classList.toggle("open");
 
-
-    document.body
-      .classList
-      .toggle(
-        "menu-open",
-        open
-      );
-
+    document.body.classList.toggle(
+      "menu-open",
+      open
+    );
 
     menuButton.textContent =
-      open
-        ? "×"
-        : "☰";
+      open ? "×" : "☰";
 
   }
 );
 
 
-/* close menu after clicking */
-
 navLinks
   .querySelectorAll("a")
-  .forEach(
-    link => {
+  .forEach(link => {
 
-      link.addEventListener(
-        "click",
-        () => {
+    link.addEventListener(
+      "click",
+      () => {
 
-          navLinks
-            .classList
-            .remove("open");
+        navLinks.classList.remove("open");
 
+        document.body.classList.remove(
+          "menu-open"
+        );
 
-          document.body
-            .classList
-            .remove("menu-open");
+        menuButton.textContent = "☰";
 
+      }
+    );
 
-          menuButton.textContent =
-            "☰";
-
-        }
-      );
-
-    }
-  );
+  });
 
 </script>
-
 
 </body>
 </html>
