@@ -1,0 +1,21 @@
+{
+  "id": "/",
+  "name": "Dr. Kama Shaffeei | KAMA-AI",
+  "short_name": "KAMA-AI",
+  "description": "Pengenalan Dr. Kama Shaffeei dan KAMA-AI, pembantu akademik digital untuk pendidikan dan penyelidikan.",
+  "lang": "ms",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FCFAF6",
+  "theme_color": "#062D58",
+  "icons": [
+    {
+      "src": "https://drkama-ai-v6.netlify.app/assets/imej%20kama-ai-robot.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
