@@ -28,9 +28,6 @@
   href="https://drkama-ai-v6.netlify.app/assets/imej%20kama-ai-robot.png"
 >
 
-
-<!-- SOCIAL PREVIEW -->
-
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr. Kama Shaffeei | KAMA-AI">
 <meta property="og:title" content="Dr. Kama Shaffeei | KAMA-AI">
@@ -59,12 +56,7 @@
   content="https://drkama-ai-v6.netlify.app/assets/dr%20kama%20sebenar.jpg"
 >
 
-
 <style>
-
-/* =========================================================
-   THEME
-   ========================================================= */
 
 :root{
   --navy:#062d58;
@@ -76,6 +68,7 @@
   --gold-soft:#f7ebcc;
 
   --cream:#f4eee3;
+  --cream-soft:#faf6ee;
   --paper:#fcfaf6;
   --white:#ffffff;
 
@@ -84,14 +77,10 @@
   --line:#dfe3e3;
 
   --shadow:0 18px 48px rgba(12,32,48,.11);
+  --shadow-soft:0 8px 24px rgba(12,32,48,.07);
 
   --max:1180px;
 }
-
-
-/* =========================================================
-   RESET
-   ========================================================= */
 
 *{
   box-sizing:border-box;
@@ -141,7 +130,7 @@ button{
 
 
 /* =========================================================
-   HEADER — FINAL KAMA-AI BRAND
+   HEADER
    ========================================================= */
 
 .header{
@@ -150,12 +139,9 @@ button{
   z-index:100;
 
   border-bottom:1px solid rgba(6,45,88,.08);
-
   background:rgba(252,250,246,.97);
-
   backdrop-filter:blur(16px);
 }
-
 
 .nav{
   min-height:82px;
@@ -167,9 +153,6 @@ button{
   gap:28px;
 }
 
-
-/* BRAND */
-
 .brand{
   min-width:0;
 
@@ -178,7 +161,6 @@ button{
 
   gap:16px;
 }
-
 
 .brand-logo{
   display:flex;
@@ -189,7 +171,6 @@ button{
   flex-shrink:0;
 }
 
-
 .brand-kmark{
   width:52px;
   height:52px;
@@ -198,7 +179,6 @@ button{
   place-items:center;
 
   border:2px solid var(--gold);
-
   border-radius:14px;
 
   color:var(--gold);
@@ -223,7 +203,6 @@ button{
   font-weight:700;
 }
 
-
 .brand-name{
   display:flex;
   align-items:baseline;
@@ -236,7 +215,6 @@ button{
   letter-spacing:-.04em;
 }
 
-
 .brand-kama{
   color:#3f4143;
 
@@ -248,7 +226,6 @@ button{
   font-weight:700;
 }
 
-
 .brand-ai{
   margin-left:2px;
 
@@ -256,7 +233,6 @@ button{
 
   font-weight:900;
 }
-
 
 .brand-divider{
   width:1px;
@@ -273,17 +249,14 @@ button{
     );
 }
 
-
 .brand-copy{
   min-width:0;
 }
-
 
 .brand-copy strong,
 .brand-copy small{
   display:block;
 }
-
 
 .brand-copy strong{
   color:var(--navy);
@@ -301,7 +274,6 @@ button{
   white-space:nowrap;
 }
 
-
 .brand-copy small{
   margin-top:4px;
 
@@ -315,16 +287,12 @@ button{
   white-space:nowrap;
 }
 
-
-/* NAVIGATION */
-
 .nav-links{
   display:flex;
   align-items:center;
 
   gap:22px;
 }
-
 
 .nav-links a{
   position:relative;
@@ -336,7 +304,6 @@ button{
 
   transition:color .18s ease;
 }
-
 
 .nav-links > a:not(.kama-nav)::after{
   content:"";
@@ -358,18 +325,13 @@ button{
   transition:transform .18s ease;
 }
 
-
 .nav-links > a:not(.kama-nav):hover{
   color:var(--navy);
 }
 
-
 .nav-links > a:not(.kama-nav):hover::after{
   transform:scaleX(1);
 }
-
-
-/* KAMA AI BUTTON */
 
 .kama-nav{
   min-height:46px;
@@ -381,7 +343,6 @@ button{
   padding:0 18px !important;
 
   border:1px solid rgba(181,134,31,.25);
-
   border-radius:12px;
 
   color:var(--navy-dark) !important;
@@ -404,7 +365,6 @@ button{
     box-shadow .17s ease;
 }
 
-
 .kama-nav:hover{
   transform:translateY(-1px);
 
@@ -413,7 +373,6 @@ button{
     rgba(181,134,31,.27);
 }
 
-
 .menu-button{
   display:none;
 
@@ -421,7 +380,6 @@ button{
   height:42px;
 
   border:1px solid var(--line);
-
   border-radius:11px;
 
   color:var(--navy);
@@ -461,7 +419,6 @@ button{
     );
 }
 
-
 .hero::before{
   content:"";
 
@@ -479,7 +436,6 @@ button{
 
   background-size:32px 32px;
 }
-
 
 .hero-inner{
   min-height:calc(100vh - 82px);
@@ -500,11 +456,6 @@ button{
   padding:58px 0 70px;
 }
 
-
-/* =========================================================
-   PORTRAIT
-   ========================================================= */
-
 .hero-portrait{
   min-height:630px;
 
@@ -514,7 +465,6 @@ button{
   align-items:center;
   justify-content:center;
 }
-
 
 .portrait-halo{
   width:520px;
@@ -533,7 +483,6 @@ button{
 
   border-radius:50%;
 }
-
 
 .portrait-halo::after{
   content:"";
@@ -560,7 +509,6 @@ button{
     rgba(4,31,62,.15);
 }
 
-
 .portrait-frame{
   width:min(440px,92%);
   height:560px;
@@ -581,7 +529,6 @@ button{
     rgba(14,34,50,.13);
 }
 
-
 .portrait-frame img{
   width:100%;
   height:100%;
@@ -591,7 +538,6 @@ button{
 
   transform:scale(1.04);
 }
-
 
 .portrait-label{
   position:absolute;
@@ -616,18 +562,15 @@ button{
     rgba(4,31,62,.20);
 }
 
-
 .portrait-label strong,
 .portrait-label span{
   display:block;
 }
 
-
 .portrait-label strong{
   font-family:Georgia,"Times New Roman",serif;
   font-size:.83rem;
 }
-
 
 .portrait-label span{
   margin-top:4px;
@@ -637,16 +580,10 @@ button{
   font-size:.48rem;
 }
 
-
-/* =========================================================
-   HERO COPY
-   ========================================================= */
-
 .hero-copy{
   position:relative;
   z-index:4;
 }
-
 
 .eyebrow{
   display:flex;
@@ -664,7 +601,6 @@ button{
   letter-spacing:.15em;
 }
 
-
 .eyebrow::before{
   content:"";
 
@@ -673,7 +609,6 @@ button{
 
   background:var(--gold);
 }
-
 
 .hero h1{
   margin:0 0 8px;
@@ -691,7 +626,6 @@ button{
   letter-spacing:-.055em;
 }
 
-
 .hero h1 span{
   display:block;
 
@@ -704,7 +638,6 @@ button{
   line-height:.96;
 }
 
-
 .hero-role{
   margin:18px 0;
 
@@ -713,7 +646,6 @@ button{
   font-size:.72rem;
   font-weight:900;
 }
-
 
 .hero-description{
   max-width:650px;
@@ -726,7 +658,6 @@ button{
   line-height:1.78;
 }
 
-
 .hero-tags{
   display:flex;
   flex-wrap:wrap;
@@ -736,12 +667,10 @@ button{
   margin:22px 0 27px;
 }
 
-
 .hero-tags span{
   padding:7px 10px;
 
   border:1px solid #d9deda;
-
   border-radius:999px;
 
   color:#52615b;
@@ -752,14 +681,12 @@ button{
   font-weight:750;
 }
 
-
 .hero-actions{
   display:flex;
   flex-wrap:wrap;
 
   gap:10px;
 }
-
 
 .primary-button,
 .secondary-button{
@@ -779,7 +706,6 @@ button{
   font-weight:900;
 }
 
-
 .primary-button{
   color:var(--navy-dark);
 
@@ -791,7 +717,6 @@ button{
     );
 }
 
-
 .secondary-button{
   color:var(--navy);
 
@@ -799,7 +724,6 @@ button{
 
   background:#fff;
 }
-
 
 .hero-quote{
   max-width:520px;
@@ -820,7 +744,6 @@ button{
   font-style:italic;
 }
 
-
 .kama-mini{
   margin-top:18px;
 
@@ -835,14 +758,12 @@ button{
   line-height:1.5;
 }
 
-
 .kama-mini img{
   width:43px;
   height:43px;
 
   object-fit:contain;
 }
-
 
 .kama-mini strong{
   color:var(--navy);
@@ -859,7 +780,6 @@ button{
 
   margin-top:-30px;
 }
-
 
 .shortcut-grid{
   display:grid;
@@ -879,7 +799,6 @@ button{
   box-shadow:var(--shadow);
 }
 
-
 .shortcut{
   min-height:105px;
 
@@ -895,13 +814,16 @@ button{
   border-radius:12px;
 
   text-align:center;
-}
 
+  transition:
+    transform .16s ease,
+    background .16s ease;
+}
 
 .shortcut:hover{
+  transform:translateY(-2px);
   background:#fbf6ea;
 }
-
 
 .shortcut-icon{
   width:35px;
@@ -911,7 +833,6 @@ button{
   place-items:center;
 
   border:1px solid #e3c56f;
-
   border-radius:9px;
 
   color:var(--gold-dark);
@@ -921,13 +842,11 @@ button{
   font-weight:900;
 }
 
-
 .shortcut strong{
   color:var(--navy);
 
   font-size:.61rem;
 }
-
 
 .shortcut small{
   color:#7d878b;
@@ -937,13 +856,12 @@ button{
 
 
 /* =========================================================
-   SECTIONS
+   GENERAL SECTIONS
    ========================================================= */
 
 .section{
   padding:90px 0;
 }
-
 
 .section-cream{
   background:
@@ -953,7 +871,6 @@ button{
       #faf7f1
     );
 }
-
 
 .section-navy{
   color:#fff;
@@ -966,7 +883,6 @@ button{
     );
 }
 
-
 .section-label{
   color:var(--gold-dark);
 
@@ -976,20 +892,17 @@ button{
   letter-spacing:.14em;
 }
 
-
 .section-heading{
   max-width:760px;
 
   margin-bottom:36px;
 }
 
-
 .section-heading.center{
   margin:0 auto 36px;
 
   text-align:center;
 }
-
 
 .section-heading h2{
   margin:8px 0 11px;
@@ -1004,7 +917,6 @@ button{
 
   font-weight:500;
 }
-
 
 .section-heading p{
   margin:0;
@@ -1028,7 +940,6 @@ button{
   gap:60px;
 }
 
-
 .about-copy h3{
   margin:0 0 18px;
 
@@ -1043,14 +954,12 @@ button{
   line-height:1.28;
 }
 
-
 .about-copy p{
   color:#5e6b72;
 
   font-size:.8rem;
   line-height:1.8;
 }
-
 
 .about-quote{
   margin-top:24px;
@@ -1068,7 +977,6 @@ button{
   font-size:1rem;
 }
 
-
 .expertise-grid{
   display:grid;
 
@@ -1076,7 +984,6 @@ button{
 
   gap:9px;
 }
-
 
 .expertise-card{
   padding:19px;
@@ -1088,14 +995,12 @@ button{
   background:#fff;
 }
 
-
 .expertise-card span{
   color:var(--gold-dark);
 
   font-size:.55rem;
   font-weight:900;
 }
-
 
 .expertise-card h3{
   margin:10px 0 7px;
@@ -1104,7 +1009,6 @@ button{
 
   font-size:.76rem;
 }
-
 
 .expertise-card p{
   margin:0;
@@ -1130,12 +1034,10 @@ button{
   gap:65px;
 }
 
-
 .robot-area{
   display:flex;
   justify-content:center;
 }
-
 
 .robot-circle{
   width:390px;
@@ -1157,7 +1059,6 @@ button{
     );
 }
 
-
 .robot-circle img{
   width:275px;
   height:275px;
@@ -1165,11 +1066,9 @@ button{
   object-fit:contain;
 }
 
-
 .kama-copy .section-label{
   color:#e7bd57;
 }
-
 
 .kama-copy h2{
   margin:8px 0 14px;
@@ -1183,7 +1082,6 @@ button{
   font-weight:500;
 }
 
-
 .kama-copy h2 span{
   display:block;
 
@@ -1194,7 +1092,6 @@ button{
   font-size:.54em;
 }
 
-
 .kama-copy p{
   max-width:640px;
 
@@ -1204,7 +1101,6 @@ button{
   line-height:1.72;
 }
 
-
 .kama-tools{
   display:flex;
   flex-wrap:wrap;
@@ -1213,7 +1109,6 @@ button{
 
   margin:23px 0;
 }
-
 
 .kama-tools span{
   padding:8px 10px;
@@ -1228,7 +1123,6 @@ button{
 
   font-size:.56rem;
 }
-
 
 .kama-button{
   min-height:56px;
@@ -1256,7 +1150,7 @@ button{
 
 
 /* =========================================================
-   ACADEMIC
+   ACADEMIC MENU
    ========================================================= */
 
 .academic-grid{
@@ -1266,7 +1160,6 @@ button{
 
   gap:13px;
 }
-
 
 .academic-card{
   min-height:255px;
@@ -1284,18 +1177,19 @@ button{
 
   transition:
     transform .17s ease,
-    box-shadow .17s ease;
+    box-shadow .17s ease,
+    border-color .17s ease;
 }
-
 
 .academic-card:hover{
   transform:translateY(-3px);
+
+  border-color:#d8c17f;
 
   box-shadow:
     0 12px 30px
     rgba(20,40,55,.08);
 }
-
 
 .academic-card small{
   color:var(--gold-dark);
@@ -1303,7 +1197,6 @@ button{
   font-size:.55rem;
   font-weight:900;
 }
-
 
 .academic-card h3{
   margin:22px 0 10px;
@@ -1315,7 +1208,6 @@ button{
   font-size:1.27rem;
 }
 
-
 .academic-card p{
   margin:0 0 18px;
 
@@ -1325,7 +1217,6 @@ button{
   line-height:1.65;
 }
 
-
 .card-link{
   margin-top:auto;
 
@@ -1333,6 +1224,350 @@ button{
 
   font-size:.6rem;
   font-weight:900;
+}
+
+
+/* =========================================================
+   ACADEMIC DETAIL
+   ========================================================= */
+
+.academic-detail{
+  scroll-margin-top:96px;
+}
+
+.detail-white{
+  background:#fff;
+}
+
+.detail-cream{
+  background:var(--cream-soft);
+}
+
+.detail-navy{
+  color:#fff;
+
+  background:
+    linear-gradient(
+      140deg,
+      var(--navy-dark),
+      var(--navy-mid)
+    );
+}
+
+.detail-head{
+  display:grid;
+
+  grid-template-columns:100px minmax(0,1fr);
+
+  gap:28px;
+
+  align-items:start;
+
+  margin-bottom:38px;
+}
+
+.detail-number{
+  color:rgba(213,168,55,.23);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:5.5rem;
+  line-height:.8;
+
+  font-weight:700;
+}
+
+.detail-title small{
+  display:block;
+
+  margin-bottom:8px;
+
+  color:var(--gold-dark);
+
+  font-size:.57rem;
+  font-weight:900;
+
+  letter-spacing:.15em;
+}
+
+.detail-title h2{
+  margin:0;
+
+  color:var(--navy);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:clamp(2.2rem,4vw,3.7rem);
+
+  line-height:1;
+
+  font-weight:500;
+}
+
+.detail-title p{
+  max-width:760px;
+
+  margin:13px 0 0;
+
+  color:#69757b;
+
+  font-size:.78rem;
+  line-height:1.72;
+}
+
+.detail-navy .detail-title h2{
+  color:#fff;
+}
+
+.detail-navy .detail-title p{
+  color:#ccdae5;
+}
+
+.detail-navy .detail-title small{
+  color:#e7bd57;
+}
+
+.detail-grid{
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:14px;
+}
+
+.detail-grid.two{
+  grid-template-columns:repeat(2,1fr);
+}
+
+.detail-card{
+  min-height:190px;
+
+  padding:24px;
+
+  border:1px solid #e1e4e3;
+
+  border-radius:17px;
+
+  background:#fff;
+
+  box-shadow:var(--shadow-soft);
+}
+
+.detail-card.featured{
+  grid-column:span 2;
+
+  border-color:rgba(213,168,55,.45);
+
+  background:
+    linear-gradient(
+      145deg,
+      #fff,
+      #fcf7ea
+    );
+}
+
+.detail-card .icon{
+  width:39px;
+  height:39px;
+
+  display:grid;
+  place-items:center;
+
+  margin-bottom:17px;
+
+  border-radius:10px;
+
+  color:var(--gold-dark);
+
+  background:var(--gold-soft);
+
+  font-weight:900;
+}
+
+.detail-card small{
+  color:var(--gold-dark);
+
+  font-size:.52rem;
+  font-weight:900;
+
+  letter-spacing:.08em;
+}
+
+.detail-card h3{
+  margin:8px 0 10px;
+
+  color:var(--navy);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:1.08rem;
+}
+
+.detail-card p{
+  margin:0;
+
+  color:#6c787e;
+
+  font-size:.66rem;
+  line-height:1.65;
+}
+
+.detail-navy .detail-card{
+  border:1px solid rgba(255,255,255,.12);
+
+  background:rgba(255,255,255,.075);
+
+  box-shadow:none;
+}
+
+.detail-navy .detail-card h3{
+  color:#fff;
+}
+
+.detail-navy .detail-card p{
+  color:#cedae4;
+}
+
+.detail-navy .detail-card small{
+  color:#e7bd57;
+}
+
+.status-note{
+  margin-top:20px;
+
+  padding:15px 17px;
+
+  border:1px dashed rgba(181,134,31,.45);
+
+  border-radius:12px;
+
+  color:#756436;
+
+  background:#fffaf0;
+
+  font-size:.62rem;
+  line-height:1.6;
+}
+
+.academic-cta{
+  margin-top:30px;
+
+  padding:24px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:20px;
+
+  border:1px solid rgba(213,168,55,.35);
+
+  border-radius:17px;
+
+  background:
+    linear-gradient(
+      120deg,
+      #fff9ec,
+      #fff
+    );
+}
+
+.academic-cta strong{
+  display:block;
+
+  color:var(--navy);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:1rem;
+}
+
+.academic-cta p{
+  margin:5px 0 0;
+
+  color:#718087;
+
+  font-size:.62rem;
+}
+
+.academic-cta a{
+  flex-shrink:0;
+
+  padding:12px 16px;
+
+  border-radius:10px;
+
+  color:var(--navy-dark);
+
+  background:var(--gold);
+
+  font-size:.61rem;
+  font-weight:900;
+}
+
+.impact-grid{
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:14px;
+}
+
+.impact-card{
+  min-height:170px;
+
+  padding:24px;
+
+  border:1px solid rgba(255,255,255,.12);
+
+  border-radius:17px;
+
+  background:rgba(255,255,255,.07);
+}
+
+.impact-card .impact-label{
+  color:#e5bd59;
+
+  font-size:.54rem;
+  font-weight:900;
+
+  letter-spacing:.12em;
+}
+
+.impact-card strong{
+  display:block;
+
+  margin:16px 0 8px;
+
+  color:#fff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:1.35rem;
+}
+
+.impact-card p{
+  margin:0;
+
+  color:#cbd9e3;
+
+  font-size:.63rem;
+  line-height:1.6;
 }
 
 
@@ -1346,7 +1581,6 @@ button{
   background:var(--cream);
 }
 
-
 .contact-grid{
   display:grid;
 
@@ -1356,7 +1590,6 @@ button{
 
   align-items:center;
 }
-
 
 .contact h2{
   margin:8px 0 11px;
@@ -1370,7 +1603,6 @@ button{
   font-weight:500;
 }
 
-
 .contact p{
   color:#66747b;
 
@@ -1378,13 +1610,11 @@ button{
   line-height:1.68;
 }
 
-
 .contact-list{
   display:grid;
 
   gap:8px;
 }
-
 
 .contact-item{
   display:grid;
@@ -1402,13 +1632,11 @@ button{
   background:#fff;
 }
 
-
 .contact-item strong{
   color:var(--gold-dark);
 
   font-size:.55rem;
 }
-
 
 .contact-item a,
 .contact-item span{
@@ -1430,7 +1658,6 @@ button{
   background:var(--navy-dark);
 }
 
-
 .footer-main{
   display:flex;
   align-items:center;
@@ -1438,7 +1665,6 @@ button{
 
   gap:20px;
 }
-
 
 .footer strong{
   display:block;
@@ -1448,7 +1674,6 @@ button{
   font-family:Georgia,"Times New Roman",serif;
 }
 
-
 .footer small{
   display:block;
 
@@ -1456,7 +1681,6 @@ button{
 
   font-size:.5rem;
 }
-
 
 .footer-links{
   display:flex;
@@ -1497,7 +1721,6 @@ button{
     rgba(3,25,47,.25);
 }
 
-
 .floating-kama img{
   width:50px;
   height:50px;
@@ -1507,7 +1730,7 @@ button{
 
 
 /* =========================================================
-   TABLET
+   RESPONSIVE
    ========================================================= */
 
 @media(max-width:1080px){
@@ -1518,18 +1741,15 @@ button{
 
 }
 
-
 @media(max-width:920px){
 
   .nav{
     min-height:68px;
   }
 
-
   .brand{
     gap:11px;
   }
-
 
   .brand-kmark{
     width:45px;
@@ -1540,27 +1760,22 @@ button{
     font-size:1.5rem;
   }
 
-
   .brand-divider{
     height:31px;
   }
-
 
   .brand-copy strong{
     font-size:.75rem;
   }
 
-
   .brand-copy small{
     font-size:.42rem;
   }
-
 
   .menu-button{
     display:grid;
     place-items:center;
   }
-
 
   .nav-links{
     width:100%;
@@ -1586,11 +1801,9 @@ button{
     transition:max-height .22s ease;
   }
 
-
   .nav-links.open{
     max-height:500px;
   }
-
 
   .nav-links a{
     display:block;
@@ -1600,18 +1813,15 @@ button{
     border-bottom:1px solid #eef0f0;
   }
 
-
   .nav-links > a:not(.kama-nav)::after{
     display:none;
   }
-
 
   .kama-nav{
     margin:10px 12px 14px;
 
     text-align:center;
   }
-
 
   .hero-inner{
     min-height:auto;
@@ -1623,13 +1833,11 @@ button{
     padding:42px 0 55px;
   }
 
-
   .hero-copy{
     order:1;
 
     text-align:center;
   }
-
 
   .hero-portrait{
     order:2;
@@ -1637,13 +1845,11 @@ button{
     min-height:500px;
   }
 
-
   .eyebrow,
   .hero-tags,
   .hero-actions{
     justify-content:center;
   }
-
 
   .hero-description,
   .hero-quote,
@@ -1652,11 +1858,9 @@ button{
     margin-right:auto;
   }
 
-
   .shortcut-grid{
     grid-template-columns:repeat(3,1fr);
   }
-
 
   .about-grid,
   .kama-layout,
@@ -1666,33 +1870,32 @@ button{
     gap:35px;
   }
 
-
   .kama-copy{
     text-align:center;
   }
-
 
   .kama-copy p{
     margin-left:auto;
     margin-right:auto;
   }
 
-
   .kama-tools{
     justify-content:center;
   }
-
 
   .academic-grid{
     grid-template-columns:repeat(2,1fr);
   }
 
+  .detail-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .impact-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
 }
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
 
 @media(max-width:560px){
 
@@ -1700,16 +1903,13 @@ button{
     width:calc(100% - 22px);
   }
 
-
   .brand{
     gap:9px;
   }
 
-
   .brand-logo{
     gap:0;
   }
-
 
   .brand-kmark{
     width:41px;
@@ -1718,42 +1918,34 @@ button{
     font-size:1.35rem;
   }
 
-
   .brand-divider{
     height:28px;
   }
-
 
   .brand-copy strong{
     font-size:.66rem;
   }
 
-
   .brand-copy small{
     display:none;
   }
-
 
   .hero-inner{
     padding:30px 0 44px;
   }
 
-
   .hero h1{
     font-size:clamp(2.8rem,16vw,4.25rem);
   }
-
 
   .hero-role{
     font-size:.59rem;
   }
 
-
   .hero-description{
     font-size:.73rem;
     line-height:1.64;
   }
-
 
   .hero-actions{
     display:grid;
@@ -1761,17 +1953,14 @@ button{
     width:100%;
   }
 
-
   .primary-button,
   .secondary-button{
     width:100%;
   }
 
-
   .hero-portrait{
     min-height:385px;
   }
-
 
   .portrait-halo{
     width:305px;
@@ -1780,14 +1969,12 @@ button{
     top:30px;
   }
 
-
   .portrait-halo::after{
     width:245px;
     height:245px;
 
     left:-12px;
   }
-
 
   .portrait-frame{
     width:285px;
@@ -1798,44 +1985,65 @@ button{
       18px 18px;
   }
 
-
   .shortcut-grid{
     grid-template-columns:repeat(2,1fr);
   }
-
 
   .section{
     padding:65px 0;
   }
 
-
   .expertise-grid,
-  .academic-grid{
+  .academic-grid,
+  .detail-grid,
+  .detail-grid.two,
+  .impact-grid{
     grid-template-columns:1fr;
   }
-
 
   .academic-card{
     min-height:auto;
   }
 
+  .detail-head{
+    grid-template-columns:1fr;
+
+    gap:8px;
+  }
+
+  .detail-number{
+    font-size:3.5rem;
+  }
+
+  .detail-card.featured{
+    grid-column:auto;
+  }
+
+  .academic-cta{
+    align-items:flex-start;
+
+    flex-direction:column;
+  }
+
+  .academic-cta a{
+    width:100%;
+
+    text-align:center;
+  }
 
   .robot-circle{
     width:270px;
     height:270px;
   }
 
-
   .robot-circle img{
     width:195px;
     height:195px;
   }
 
-
   .kama-button{
     width:100%;
   }
-
 
   .contact-item{
     grid-template-columns:1fr;
@@ -1843,13 +2051,11 @@ button{
     gap:4px;
   }
 
-
   .footer-main{
     flex-direction:column;
 
     align-items:flex-start;
   }
-
 
   .floating-kama{
     width:54px;
@@ -1858,7 +2064,6 @@ button{
     right:12px;
     bottom:12px;
   }
-
 
   .floating-kama img{
     width:43px;
@@ -1875,17 +2080,11 @@ button{
 <body>
 
 
-<!-- ======================================================
-     HEADER FINAL
-     ====================================================== -->
-
 <header class="header">
 
   <nav class="container nav">
 
-
     <a href="#home" class="brand">
-
 
       <div class="brand-logo">
 
@@ -1899,9 +2098,7 @@ button{
 
       </div>
 
-
       <div class="brand-divider"></div>
-
 
       <div class="brand-copy">
 
@@ -1914,7 +2111,6 @@ button{
         </small>
 
       </div>
-
 
     </a>
 
@@ -1959,15 +2155,10 @@ button{
 
     </div>
 
-
   </nav>
 
 </header>
 
-
-<!-- ======================================================
-     HERO
-     ====================================================== -->
 
 <section
   id="home"
@@ -1990,7 +2181,6 @@ button{
 
       </div>
 
-
       <div class="portrait-label">
 
         <strong>
@@ -2007,7 +2197,6 @@ button{
 
 
     <div class="hero-copy">
-
 
       <div class="eyebrow">
         PENDIDIK · PENYELIDIK · PEMBIMBING
@@ -2046,11 +2235,8 @@ button{
       <div class="hero-tags">
 
         <span>Pendidikan Khas</span>
-
         <span>Pendidikan Inklusif</span>
-
         <span>Instrumen & Pentaksiran</span>
-
         <span>Transisi Kerjaya</span>
 
       </div>
@@ -2059,12 +2245,11 @@ button{
       <div class="hero-actions">
 
         <a
-          href="https://drkama-ai-v6.netlify.app/kama-ai/"
+          href="https://chat.kama-ai.my/kama-ai/"
           class="primary-button"
         >
           🤖 GUNAKAN KAMA-AI →
         </a>
-
 
         <a
           href="#dr-kama"
@@ -2109,131 +2294,55 @@ button{
 
     </div>
 
-
   </div>
 
 </section>
 
-
-<!-- ======================================================
-     QUICK ACCESS
-     ====================================================== -->
 
 <section class="shortcuts">
 
   <div class="container shortcut-grid">
 
-
-    <a href="#publications" class="shortcut">
-
-      <div class="shortcut-icon">
-        P
-      </div>
-
-      <strong>
-        Publications
-      </strong>
-
-      <small>
-        Penerbitan akademik
-      </small>
-
+    <a href="#publications-detail" class="shortcut">
+      <div class="shortcut-icon">P</div>
+      <strong>Publications</strong>
+      <small>Penerbitan akademik</small>
     </a>
 
-
-    <a href="#awards" class="shortcut">
-
-      <div class="shortcut-icon">
-        ★
-      </div>
-
-      <strong>
-        Awards
-      </strong>
-
-      <small>
-        Pengiktirafan
-      </small>
-
+    <a href="#awards-detail" class="shortcut">
+      <div class="shortcut-icon">★</div>
+      <strong>Awards</strong>
+      <small>Pengiktirafan</small>
     </a>
 
-
-    <a href="#projects" class="shortcut">
-
-      <div class="shortcut-icon">
-        ◇
-      </div>
-
-      <strong>
-        Projects
-      </strong>
-
-      <small>
-        Projek penyelidikan
-      </small>
-
+    <a href="#projects-detail" class="shortcut">
+      <div class="shortcut-icon">◇</div>
+      <strong>Projects</strong>
+      <small>Projek penyelidikan</small>
     </a>
 
-
-    <a href="#collaboration" class="shortcut">
-
-      <div class="shortcut-icon">
-        C
-      </div>
-
-      <strong>
-        Collaboration
-      </strong>
-
-      <small>
-        Jaringan akademik
-      </small>
-
+    <a href="#collaboration-detail" class="shortcut">
+      <div class="shortcut-icon">C</div>
+      <strong>Collaboration</strong>
+      <small>Jaringan akademik</small>
     </a>
 
-
-    <a href="#citations" class="shortcut">
-
-      <div class="shortcut-icon">
-        ↑
-      </div>
-
-      <strong>
-        Citation Statistics
-      </strong>
-
-      <small>
-        Profil & metrik
-      </small>
-
+    <a href="#impact-detail" class="shortcut">
+      <div class="shortcut-icon">↑</div>
+      <strong>Citation Statistics</strong>
+      <small>Profil & impak</small>
     </a>
 
-
-    <a href="#teaching" class="shortcut">
-
-      <div class="shortcut-icon">
-        T
-      </div>
-
-      <strong>
-        Teaching
-      </strong>
-
-      <small>
-        Pengajaran & penyeliaan
-      </small>
-
+    <a href="#teaching-detail" class="shortcut">
+      <div class="shortcut-icon">T</div>
+      <strong>Teaching</strong>
+      <small>Pengajaran & penyeliaan</small>
     </a>
-
 
   </div>
 
 </section>
 
-
-<!-- ======================================================
-     ABOUT
-     ====================================================== -->
 
 <section
   id="dr-kama"
@@ -2241,7 +2350,6 @@ button{
 >
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -2258,43 +2366,31 @@ button{
 
     <div class="about-grid">
 
-
       <div class="about-copy">
 
         <h3>
-
           Pendidikan yang bermakna bermula
           dengan memahami keunikan setiap individu.
-
         </h3>
 
-
         <p>
-
           Dr. Kama Shaffeei terlibat dalam bidang
           Pendidikan Khas dengan kepakaran merangkumi
           Pendidikan Inklusif, pembangunan kurikulum,
           pembangunan instrumen, kemahiran vokasional,
           transisi kerjaya dan pendidikan guru.
-
         </p>
 
-
         <p>
-
           Fokus akademiknya menghubungkan penyelidikan
           dengan amalan pendidikan, pembangunan
           profesional dan penyelesaian yang boleh
           digunakan dalam konteks sebenar.
-
         </p>
 
-
         <div class="about-quote">
-
           “Setiap murid unik,
           setiap potensi berharga.”
-
         </div>
 
       </div>
@@ -2305,105 +2401,61 @@ button{
         class="expertise-grid"
       >
 
-
         <article class="expertise-card">
-
           <span>01</span>
-
-          <h3>
-            Pendidikan Khas
-          </h3>
-
+          <h3>Pendidikan Khas</h3>
           <p>
             Pembelajaran dan pembangunan potensi
             murid berkeperluan pendidikan khas.
           </p>
-
         </article>
 
-
         <article class="expertise-card">
-
           <span>02</span>
-
-          <h3>
-            Pendidikan Inklusif
-          </h3>
-
+          <h3>Pendidikan Inklusif</h3>
           <p>
             Akses dan penyertaan bermakna
             dalam pendidikan.
           </p>
-
         </article>
 
-
         <article class="expertise-card">
-
           <span>03</span>
-
-          <h3>
-            Instrumen & Pentaksiran
-          </h3>
-
+          <h3>Instrumen & Pentaksiran</h3>
           <p>
             Konstruk, item, kesahan dan
             kebolehpercayaan instrumen.
           </p>
-
         </article>
 
-
         <article class="expertise-card">
-
           <span>04</span>
-
-          <h3>
-            Transisi Kerjaya
-          </h3>
-
+          <h3>Transisi Kerjaya</h3>
           <p>
             Kemahiran vokasional dan persediaan
             individu menuju dunia pekerjaan.
           </p>
-
         </article>
 
-
         <article class="expertise-card">
-
           <span>05</span>
-
-          <h3>
-            Kurikulum
-          </h3>
-
+          <h3>Kurikulum</h3>
           <p>
             Pembangunan kurikulum berdasarkan
             keperluan pembelajaran.
           </p>
-
         </article>
 
-
         <article class="expertise-card">
-
           <span>06</span>
-
-          <h3>
-            Pendidikan Guru
-          </h3>
-
+          <h3>Pendidikan Guru</h3>
           <p>
             Kompetensi, pedagogi dan pembangunan
             profesional guru.
           </p>
-
         </article>
 
-
       </div>
-
 
     </div>
 
@@ -2412,14 +2464,9 @@ button{
 </section>
 
 
-<!-- ======================================================
-     KAMA AI
-     ====================================================== -->
-
 <section class="section section-navy">
 
   <div class="container kama-layout">
-
 
     <div class="robot-area">
 
@@ -2437,35 +2484,25 @@ button{
 
     <div class="kama-copy">
 
-
       <div class="section-label">
         PRODUK UTAMA
       </div>
 
-
       <h2>
-
         KAMA-AI
-
         <span>
           Pembantu Akademik Digital
         </span>
-
       </h2>
 
-
       <p>
-
         Gunakan KAMA-AI untuk membantu menghasilkan,
         menyusun dan menganalisis kerja akademik bagi
         pendidikan, penyelidikan, pembangunan instrumen,
         penulisan tesis dan persediaan viva.
-
       </p>
 
-
       <div class="kama-tools">
-
         <span>Bina RPH</span>
         <span>Proposal Kajian</span>
         <span>Research Gap</span>
@@ -2473,9 +2510,7 @@ button{
         <span>Rubrik</span>
         <span>Semak Tesis</span>
         <span>Mock Viva</span>
-
       </div>
-
 
       <a
         href="https://chat.kama-ai.my/kama-ai/"
@@ -2484,18 +2519,12 @@ button{
         🤖 BUKA KAMA-AI SEKARANG →
       </a>
 
-
     </div>
-
 
   </div>
 
 </section>
 
-
-<!-- ======================================================
-     ACADEMIC
-     ====================================================== -->
 
 <section
   id="akademik"
@@ -2504,26 +2533,19 @@ button{
 
   <div class="container">
 
-
     <div class="section-heading center">
 
       <div class="section-label">
         PROFIL AKADEMIK
       </div>
 
-
       <h2>
         Terokai Maklumat Akademik
       </h2>
 
-
       <p>
-
-        Terokai penerbitan, anugerah,
-        projek penyelidikan, kolaborasi,
-        impak akademik serta pengajaran
-        dan penyeliaan Dr. Kama.
-
+        Semua maklumat akademik dipaparkan
+        terus dalam kama-ai.my.
       </p>
 
     </div>
@@ -2531,181 +2553,846 @@ button{
 
     <div class="academic-grid">
 
+      <article class="academic-card">
 
-      <article
-        id="publications"
-        class="academic-card"
-      >
+        <small>01 · PUBLICATIONS</small>
 
-        <small>
-          01 · PUBLICATIONS
-        </small>
-
-        <h3>
-          Publications
-        </h3>
+        <h3>Publications</h3>
 
         <p>
-
-          Penerbitan, artikel, buku dan
-          hasil penulisan akademik Dr. Kama.
-
+          Penerbitan, karya dan
+          penulisan akademik.
         </p>
 
-        <a href="#publications" class="card-link">
-          Terokai Publications →
+        <a
+          href="#publications-detail"
+          class="card-link"
+        >
+          Terokai Publications ↓
         </a>
 
       </article>
 
 
-      <article
-        id="awards"
-        class="academic-card"
-      >
+      <article class="academic-card">
 
-        <small>
-          02 · AWARDS
-        </small>
+        <small>02 · AWARDS</small>
 
-        <h3>
-          Awards & Recognition
-        </h3>
+        <h3>Awards & Recognition</h3>
 
         <p>
-
-          Pengiktirafan berkaitan pendidikan,
-          penyelidikan, inovasi dan
-          sumbangan profesional.
-
+          Pengiktirafan akademik
+          dan profesional.
         </p>
 
-        <a href="#awards" class="card-link">
-          Terokai Awards →
+        <a
+          href="#awards-detail"
+          class="card-link"
+        >
+          Terokai Awards ↓
         </a>
 
       </article>
 
 
-      <article
-        id="projects"
-        class="academic-card"
-      >
+      <article class="academic-card">
 
-        <small>
-          03 · PROJECTS
-        </small>
+        <small>03 · PROJECTS</small>
 
-        <h3>
-          Research Projects
-        </h3>
+        <h3>Research Projects</h3>
 
         <p>
-
-          Projek penyelidikan dan pembangunan
-          dalam bidang kepakaran Dr. Kama.
-
+          Penyelidikan dan pembangunan
+          dalam bidang kepakaran.
         </p>
 
-        <a href="#projects" class="card-link">
-          Terokai Projects →
+        <a
+          href="#projects-detail"
+          class="card-link"
+        >
+          Terokai Projects ↓
         </a>
 
       </article>
 
 
-      <article
-        id="collaboration"
-        class="academic-card"
-      >
+      <article class="academic-card">
 
-        <small>
-          04 · COLLABORATION
-        </small>
+        <small>04 · COLLABORATION</small>
 
-        <h3>
-          Academic Collaboration
-        </h3>
+        <h3>Academic Collaboration</h3>
 
         <p>
-
-          Jaringan pendidikan, penyelidikan
-          dan pembangunan profesional.
-
+          Jaringan akademik,
+          penyelidikan dan profesional.
         </p>
 
-        <a href="#collaboration" class="card-link">
-          Terokai Collaboration →
+        <a
+          href="#collaboration-detail"
+          class="card-link"
+        >
+          Terokai Collaboration ↓
         </a>
 
       </article>
 
 
-      <article
-        id="citations"
-        class="academic-card"
-      >
+      <article class="academic-card">
 
-        <small>
-          05 · ACADEMIC IMPACT
-        </small>
+        <small>05 · ACADEMIC IMPACT</small>
 
-        <h3>
-          Citation & Academic Impact
-        </h3>
+        <h3>Citation & Academic Impact</h3>
 
         <p>
-
-          Profil akademik dan impak penyelidikan
-          melalui data yang boleh disahkan.
-
+          Profil dan impak penyelidikan
+          berdasarkan data yang disahkan.
         </p>
 
-        <a href="#citations" class="card-link">
-          Lihat Academic Impact →
+        <a
+          href="#impact-detail"
+          class="card-link"
+        >
+          Lihat Academic Impact ↓
         </a>
 
       </article>
 
 
-      <article
-        id="teaching"
-        class="academic-card"
-      >
+      <article class="academic-card">
 
-        <small>
-          06 · TEACHING
-        </small>
+        <small>06 · TEACHING</small>
 
-        <h3>
-          Teaching & Supervision
-        </h3>
+        <h3>Teaching & Supervision</h3>
 
         <p>
-
-          Pengajaran, penyeliaan, pembangunan
-          instrumen dan pembangunan akademik.
-
+          Pengajaran, penyeliaan
+          dan pembangunan akademik.
         </p>
 
-        <a href="#teaching" class="card-link">
-          Terokai Teaching →
+        <a
+          href="#teaching-detail"
+          class="card-link"
+        >
+          Terokai Teaching ↓
         </a>
 
       </article>
-
 
     </div>
-
 
   </div>
 
 </section>
 
 
-<!-- ======================================================
-     CONTACT
-     ====================================================== -->
+<section
+  id="publications-detail"
+  class="section academic-detail detail-white"
+>
+
+  <div class="container">
+
+    <div class="detail-head">
+
+      <div class="detail-number">
+        01
+      </div>
+
+      <div class="detail-title">
+
+        <small>
+          PUBLICATIONS & ACADEMIC WRITING
+        </small>
+
+        <h2>
+          Publications
+        </h2>
+
+        <p>
+          Penulisan dan hasil akademik dalam
+          Pendidikan Khas, Pendidikan Inklusif,
+          pembangunan instrumen, kemahiran vokasional,
+          transisi kerjaya dan bidang berkaitan.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="detail-grid">
+
+      <article class="detail-card featured">
+
+        <small>
+          TESIS DOKTOR FALSAFAH · 2019
+        </small>
+
+        <h3>
+          Pembangunan instrumen saringan kemahiran Vokasional
+          murid berkeperluan khas masalah pembelajaran bagi
+          persediaan sijil kemahiran Malaysia
+        </h3>
+
+        <p>
+          Penyelidikan doktor falsafah yang memberi fokus
+          kepada pembangunan instrumen saringan kemahiran
+          vokasional bagi murid berkeperluan khas
+          masalah pembelajaran.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">J</div>
+
+        <h3>Artikel Jurnal</h3>
+
+        <p>
+          Senarai artikel jurnal akan dipaparkan
+          berdasarkan rekod penerbitan yang telah disahkan.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">B</div>
+
+        <h3>Buku & Bab Buku</h3>
+
+        <p>
+          Buku, bab dalam buku dan karya akademik
+          akan disenaraikan selepas pengesahan bibliografi.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">P</div>
+
+        <h3>Prosiding</h3>
+
+        <p>
+          Penulisan persidangan dan prosiding
+          akan disusun mengikut maklumat penerbitan rasmi.
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <div class="status-note">
+
+      Senarai penerbitan penuh akan dikemas kini menggunakan
+      rekod bibliografi yang telah disahkan supaya tajuk,
+      tahun, jurnal dan maklumat penerbit adalah tepat.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section
+  id="awards-detail"
+  class="section academic-detail detail-cream"
+>
+
+  <div class="container">
+
+    <div class="detail-head">
+
+      <div class="detail-number">
+        02
+      </div>
+
+      <div class="detail-title">
+
+        <small>
+          AWARDS & RECOGNITION
+        </small>
+
+        <h2>
+          Awards & Recognition
+        </h2>
+
+        <p>
+          Pengiktirafan berkaitan pendidikan,
+          penyelidikan, inovasi dan
+          sumbangan profesional.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="detail-grid">
+
+      <article class="detail-card">
+
+        <div class="icon">★</div>
+
+        <h3>
+          Academic Recognition
+        </h3>
+
+        <p>
+          Pengiktirafan akademik akan disenaraikan
+          selepas maklumat rasmi disahkan.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">I</div>
+
+        <h3>
+          Innovation
+        </h3>
+
+        <p>
+          Anugerah berkaitan inovasi,
+          pembangunan pendidikan dan
+          penyelesaian berimpak.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">P</div>
+
+        <h3>
+          Professional Recognition
+        </h3>
+
+        <p>
+          Pengiktirafan profesional dan
+          sumbangan kepada komuniti pendidikan.
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <div class="status-note">
+
+      Tiada nama anugerah atau angka dimasukkan
+      sehingga rekod rasmi Dr. Kama disahkan.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section
+  id="projects-detail"
+  class="section academic-detail detail-white"
+>
+
+  <div class="container">
+
+    <div class="detail-head">
+
+      <div class="detail-number">
+        03
+      </div>
+
+      <div class="detail-title">
+
+        <small>
+          RESEARCH & DEVELOPMENT
+        </small>
+
+        <h2>
+          Research Projects
+        </h2>
+
+        <p>
+          Bidang projek dan penyelidikan
+          berasaskan kepakaran akademik Dr. Kama.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="detail-grid two">
+
+      <article class="detail-card">
+
+        <div class="icon">PK</div>
+
+        <h3>
+          Pendidikan Khas
+        </h3>
+
+        <p>
+          Penyelidikan berkaitan pendidikan,
+          pembelajaran dan pembangunan potensi
+          murid berkeperluan pendidikan khas.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">PI</div>
+
+        <h3>
+          Pendidikan Inklusif
+        </h3>
+
+        <p>
+          Penyelidikan berkaitan akses,
+          penyertaan dan amalan pendidikan inklusif.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">IN</div>
+
+        <h3>
+          Pembangunan Instrumen
+        </h3>
+
+        <p>
+          Pembangunan konstruk, item,
+          kesahan dan kebolehpercayaan
+          instrumen penyelidikan.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">VK</div>
+
+        <h3>
+          Vokasional & Transisi Kerjaya
+        </h3>
+
+        <p>
+          Kemahiran vokasional,
+          persediaan kerjaya dan
+          transisi menuju dunia pekerjaan.
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <div class="academic-cta">
+
+      <div>
+
+        <strong>
+          Cadangan kolaborasi penyelidikan?
+        </strong>
+
+        <p>
+          Hubungi Dr. Kama untuk pertanyaan berkaitan
+          penyelidikan dan kerjasama akademik.
+        </p>
+
+      </div>
+
+      <a href="#hubungi">
+        HUBUNGI DR. KAMA →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section
+  id="collaboration-detail"
+  class="section academic-detail detail-cream"
+>
+
+  <div class="container">
+
+    <div class="detail-head">
+
+      <div class="detail-number">
+        04
+      </div>
+
+      <div class="detail-title">
+
+        <small>
+          ACADEMIC & PROFESSIONAL NETWORK
+        </small>
+
+        <h2>
+          Academic Collaboration
+        </h2>
+
+        <p>
+          Ruang kolaborasi bagi penyelidikan,
+          pendidikan, pembangunan instrumen
+          dan pembangunan profesional.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="detail-grid two">
+
+      <article class="detail-card">
+
+        <div class="icon">R</div>
+
+        <h3>
+          Research Collaboration
+        </h3>
+
+        <p>
+          Kerjasama penyelidikan,
+          pembangunan ilmu dan
+          penerbitan akademik.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">S</div>
+
+        <h3>
+          Special & Inclusive Education
+        </h3>
+
+        <p>
+          Jaringan dalam Pendidikan Khas
+          dan Pendidikan Inklusif.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">I</div>
+
+        <h3>
+          Instrument Development
+        </h3>
+
+        <p>
+          Kolaborasi pembangunan,
+          semakan dan penilaian
+          instrumen penyelidikan.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">P</div>
+
+        <h3>
+          Professional Development
+        </h3>
+
+        <p>
+          Pendidikan guru, latihan,
+          pembangunan profesional dan
+          perkongsian kepakaran.
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <div class="academic-cta">
+
+      <div>
+
+        <strong>
+          Berminat untuk berkolaborasi?
+        </strong>
+
+        <p>
+          Gunakan saluran rasmi untuk
+          menghubungi Dr. Kama.
+        </p>
+
+      </div>
+
+      <a href="#hubungi">
+        MULAKAN KOLABORASI →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section
+  id="impact-detail"
+  class="section academic-detail detail-navy"
+>
+
+  <div class="container">
+
+    <div class="detail-head">
+
+      <div class="detail-number">
+        05
+      </div>
+
+      <div class="detail-title">
+
+        <small>
+          CITATION & ACADEMIC IMPACT
+        </small>
+
+        <h2>
+          Academic Impact
+        </h2>
+
+        <p>
+          Citation, H-index dan profil akademik
+          akan dipaparkan menggunakan data
+          yang telah disahkan.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="impact-grid">
+
+      <article class="impact-card">
+
+        <div class="impact-label">
+          CITATIONS
+        </div>
+
+        <strong>
+          Data Disahkan
+        </strong>
+
+        <p>
+          Jumlah citation akan dimasukkan
+          selepas profil akademik rasmi disahkan.
+        </p>
+
+      </article>
+
+
+      <article class="impact-card">
+
+        <div class="impact-label">
+          H-INDEX
+        </div>
+
+        <strong>
+          Data Disahkan
+        </strong>
+
+        <p>
+          Nilai H-index tidak akan dipaparkan
+          menggunakan angka yang belum disahkan.
+        </p>
+
+      </article>
+
+
+      <article class="impact-card">
+
+        <div class="impact-label">
+          ACADEMIC PROFILES
+        </div>
+
+        <strong>
+          Profil Rasmi
+        </strong>
+
+        <p>
+          Pautan Google Scholar, ORCID atau
+          profil penyelidikan akan ditambah
+          selepas pengesahan.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section
+  id="teaching-detail"
+  class="section academic-detail detail-white"
+>
+
+  <div class="container">
+
+    <div class="detail-head">
+
+      <div class="detail-number">
+        06
+      </div>
+
+      <div class="detail-title">
+
+        <small>
+          TEACHING & ACADEMIC SUPERVISION
+        </small>
+
+        <h2>
+          Teaching & Supervision
+        </h2>
+
+        <p>
+          Pengajaran, penyelidikan,
+          pembangunan instrumen,
+          bimbingan akademik dan
+          pembangunan penyelidik.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="detail-grid two">
+
+      <article class="detail-card">
+
+        <div class="icon">T</div>
+
+        <h3>
+          Teaching
+        </h3>
+
+        <p>
+          Pengajaran dalam bidang
+          Pendidikan Khas dan
+          bidang akademik berkaitan.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">S</div>
+
+        <h3>
+          Research Supervision
+        </h3>
+
+        <p>
+          Bimbingan penyelidikan,
+          pembangunan akademik
+          dan penyeliaan pelajar.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">M</div>
+
+        <h3>
+          Instrument & Research Methodology
+        </h3>
+
+        <p>
+          Pembangunan instrumen,
+          reka bentuk kajian dan
+          pendekatan penyelidikan.
+        </p>
+
+      </article>
+
+
+      <article class="detail-card">
+
+        <div class="icon">V</div>
+
+        <h3>
+          Viva & Academic Development
+        </h3>
+
+        <p>
+          Persediaan pembentangan,
+          viva dan pembangunan
+          kompetensi penyelidik.
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <div class="academic-cta">
+
+      <div>
+
+        <strong>
+          Perlukan bantuan akademik?
+        </strong>
+
+        <p>
+          Gunakan KAMA-AI untuk RPH,
+          proposal, research gap,
+          instrumen, tesis dan mock viva.
+        </p>
+
+      </div>
+
+      <a
+        href="https://chat.kama-ai.my/kama-ai/"
+      >
+        🤖 GUNAKAN KAMA-AI →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
 
 <section
   id="hubungi"
@@ -2714,45 +3401,36 @@ button{
 
   <div class="container contact-grid">
 
-
     <div>
-
 
       <div class="section-label">
         HUBUNGI
       </div>
 
-
       <h2>
         Hubungi Dr. Kama
       </h2>
 
-
       <p>
-
         Untuk pertanyaan akademik,
         penyelidikan atau kolaborasi
         gunakan saluran rasmi berikut.
 
         Untuk bantuan akademik secara
         langsung, gunakan KAMA-AI.
-
       </p>
 
-
       <a
-        href="https://drkama-ai-v6.netlify.app/kama-ai/"
+        href="https://chat.kama-ai.my/kama-ai/"
         class="primary-button"
       >
         🤖 Gunakan KAMA-AI →
       </a>
 
-
     </div>
 
 
     <div class="contact-list">
-
 
       <div class="contact-item">
 
@@ -2806,22 +3484,28 @@ button{
       </div>
 
 
-    </div>
+      <div class="contact-item">
 
+        <strong>
+          JABATAN
+        </strong>
+
+        <span>
+          Jabatan Pendidikan Khas
+        </span>
+
+      </div>
+
+    </div>
 
   </div>
 
 </section>
 
 
-<!-- ======================================================
-     FOOTER
-     ====================================================== -->
-
 <footer class="footer">
 
   <div class="container footer-main">
-
 
     <div>
 
@@ -2851,22 +3535,17 @@ button{
       </a>
 
       <a
-        href="https://drkama-ai-v6.netlify.app/kama-ai/"
+        href="https://chat.kama-ai.my/kama-ai/"
       >
         KAMA-AI
       </a>
 
     </div>
 
-
   </div>
 
 </footer>
 
-
-<!-- ======================================================
-     FLOATING KAMA
-     ====================================================== -->
 
 <a
   href="https://chat.kama-ai.my/kama-ai/"
@@ -2883,8 +3562,6 @@ button{
 
 
 <script>
-
-/* MOBILE MENU */
 
 const menuButton =
   document.querySelector("#menuButton");
@@ -2935,8 +3612,6 @@ navLinks
     }
   );
 
-
-/* PWA */
 
 if("serviceWorker" in navigator){
 
